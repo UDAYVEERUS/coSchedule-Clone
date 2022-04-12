@@ -175,6 +175,70 @@
         .dropDown:hover #resourcesDropDown{
             display: flex;
             justify-content: space-between;
+            /* border: 1px solid red; */
+            padding: 35px;
+            padding-top: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .resourceDropDiv{
+            /* border: 1px solid black; */
+            padding: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        #resourcesDropDown{
+            right: auto;
+            width: 880px;
+            left: 50px;
+            /* padding-left: 30px; */
+            border-radius: 5px;
+            background-color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #resourcesfirstdiv{
+            width: 35%;
+            border-right: 1px solid #e9e9e9;
+            /* padding-top: 10px; */
+            /* border: 1px solid red; */
+        }
+        #resourcesfirstdiv>div>p{
+            margin-top: -5%;
+        }
+        .resourceDropDiv>div:hover{
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+        }
+        #resourcesDropDown>div>div{
+            /* border: 1px solid black; */
+            color: gray;
+            /* padding: 1px; */
+            padding-left: 15px;
+            margin-right: 7px;
+            /* margin-top: -5%; */
+        }
+        #resourcesDropDown>div>div>h4{
+            color: black;
+        }
+        #resourcesfirstdiv>div{
+            /* border: 1px solid red; */
+            padding: 1px;
+        }
+        .resourceDropDiv>h5{
+            /* border: 1px solid red; */
+            margin-bottom: 5px;
+        }
+        .clickablePara{
+            padding: 7px;
+            color: gray;
+            border-radius: 10px;
+        }
+        .clickablePara:hover{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+            cursor: pointer;
+        }
+        .sideHeading{
+            padding-left: 7px;
         }
 /* NAVBAR PART END */
     </style>
@@ -237,55 +301,37 @@
             <div class="dropDown">
                 <button class="dropBtn">Resources</button>
                 <div id="resourcesDropDown" class="dropDownContent">
-                    <div>
-                        <h5>LEARN</h5>
-                        <div>
+                    <div id="resourcesfirstdiv" class="resourceDropDiv">
+                        <h5 style="padding-left: 13px;">LEARN</h5>
+                        <div onclick="CoScheduleBlog()">
                             <h4>CoSchedule Blog</h4>
                             <p>Content to help marketers plan, organize, and meet their goals.</p>
                         </div>
-                        <div>
+                        <div onclick="CoScheduleGuide()">
                             <h4>CoSchedule Guide</h4>
                             <p>How to organize all of your marketing with CoSchedule best practices.</p>
                         </div>
-                        <div>
+                        <div onclick="MarketingIdeasHub()">
                             <h4>Marketing Ideas Hub</h4>
                             <p>A list of creative tactics to try out in your marketing strategy.</p>
                         </div>
                     </div>
-                    <div>
-                        <h5>TOOLS</h5>
-                        <div>
-                            <p>Headline Analyzer</p>
-                        </div>
-                        <div>
-                            <p>Social Message Optimizer</p>
-                        </div>
-                        <div>
-                            <p>Email Subject Line Tester</p>
-                        </div>
-                        <h5>BOOKS</h5>
-                        <div>
-                            <p>10x Marketing Formula</p>
-                        </div>
-                        <div>
-                            <p>Get Started with Agile Marketing</p>
-                        </div>
+                    <div class="resourceDropDiv">
+                        <h5 class="sideHeading">TOOLS</h5>
+                        <p onclick="HeadlineAnalyzer()" class="clickablePara">Headline Analyzer</p>
+                        <p onclick="SocialMessageOptimizer()" class="clickablePara">Social Message Optimizer</p>
+                        <p onclick="EmailSubjectLineTester()" class="clickablePara">Email Subject Line Tester</p>
+                        <h5 class="sideHeading">BOOKS</h5>
+                        <p onclick="tenxMarketingFormula()" class="clickablePara">10x Marketing Formula</p>
+                        <p onclick="GetStartedwithAgileMarketing()" class="clickablePara">Get Started with Agile Marketing</p>
                     </div>
-                    <div>
-                        <h5>GUIDE</h5>
-                        <div>
-                            <p>Agile Marketing Guide</p>
-                        </div>
-                        <div>
-                            <p>Marketing Strategy Guide</p>
-                        </div>
-                        <div>
-                            <p>Content Marketing Guide</p>
-                        </div>
-                        <h5>PODCAST</h5>
-                        <div>
-                            <p>Actionable Marketing Podcast</p>
-                        </div>
+                    <div class="resourceDropDiv">
+                        <h5 class="sideHeading">GUIDE</h5>
+                        <p onclick="AgileMarketingGuide()" class="clickablePara">Agile Marketing Guide</p>
+                        <p onclick="MarketingStrategyGuide()" class="clickablePara">Marketing Strategy Guide</p>
+                        <p onclick="ContentMarketingGuide()" class="clickablePara">Content Marketing Guide</p>
+                        <h5 class="sideHeading">PODCAST</h5>
+                        <p onclick="ActionableMarketingPodcast()" class="clickablePara">Actionable Marketing Podcast</p>
                     </div>
                 </div>
             </div>
@@ -316,7 +362,43 @@
             window.location.href='CustomerStories.html';
         }
         function BuildYourCaseForCoSchedule(){
-            window.location.href='BuildYourCaseForCoSchedule.html'
+            window.location.href='BuildYourCaseForCoSchedule.html';
+        }
+        function CoScheduleBlog(){
+            window.location.href='CoScheduleBlog.html';
+        }
+        function CoScheduleGuide(){
+            window.location.href='CoScheduleGuide.html';
+        }
+        function MarketingIdeasHub(){
+            window.location.href='MarketingIdeasHub.html';
+        }
+        function HeadlineAnalyzer(){
+            window.location.href='HeadlineAnalyzer.html';
+        }
+        function SocialMessageOptimizer(){
+            window.location.href='SocialMessageOptimizer.html';
+        }
+        function EmailSubjectLineTester(){
+            window.location.href='EmailSubjectLineTester.html';
+        }
+        function tenxMarketingFormula(){
+            window.location.href='10xMarketingFormula.html';
+        }
+        function GetStartedwithAgileMarketing(){
+            window.location.href='GetStartedwithAgileMarketing.html';
+        }
+        function AgileMarketingGuide(){
+            window.location.href='AgileMarketingGuide.html';
+        }
+        function MarketingStrategyGuide(){
+            window.location.href='MarketingStrategyGuide.html';
+        }
+        function ContentMarketingGuide(){
+            window.location.href='ContentMarketingGuide.html';
+        }
+        function ActionableMarketingPodcast(){
+            window.location.href='ActionableMarketingPodcast.html';
         }
     </script>
 </body>
