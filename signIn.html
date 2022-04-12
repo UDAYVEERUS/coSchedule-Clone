@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Document</title>
+    <style>
+        
+        #parent>img{
+            text-align: center;
+            margin:auto;
+            height:auto;
+            width: 30%;
+        }
+        #container{
+            /* text-align: center; */
+            /* justify-content: center; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin:5% 20% 20% 20%;
+
+            width: 30%;
+            
+        }
+        #parent{
+            text-align: center;
+        }
+        #box{
+            display:flex;
+            text-align: center;
+            width:100%;
+        }
+        input{
+            height: 30px;
+            width: 50%;
+        }
+        body{
+            
+        }
+     
+    </style>
 </head>
 <body>
-    uday
+    <form id="container">
+        <div id="parent">
+            <img src="https://accounts.coschedule.com/img/cos-logo-horz.svg" alt="">
+            <p>EMAIL ADRESS</p>
+            <input type="email" placeholder="Email Address">
+            <p>PASSWORD</p>
+            <input type="password" placeholder="Password">
+            <br>
+            <br>
+            <input type="submit" value="Sign In" id="submitBtn">
+            <br>
+            <br>
+            <br>
+            <div id="box">
+                <p>Need an account?</p>
+                <p>Forgot your password?</p>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
