@@ -9,6 +9,7 @@
         body{
             background-color: #f8f8f8;
         }
+/* NAVBAR PART START */
         #navBar{
             /* border: 1px solid red; */
             display: flex;
@@ -113,6 +114,7 @@
             left: 60px;
             padding-left: 30px;
             border-radius: 5px;
+            background-color: white;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             /* padding: 30px 20px; */
         }
@@ -148,9 +150,37 @@
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0) 0px 0px 1px 0px;
         }
+        #whyCoScheduleDropDown{
+            /* border: 1px solid red; */
+            width: 300px;
+            background-color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+        }
+        .whyBoxPara{
+            margin-top: -6%;
+        }
+        #whyCoScheduleDropDown>div{
+            padding: 20px;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            border-radius: 10px;
+        }
+        #whyCoScheduleDropDown>div:hover{
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+        }
+        .dropDown:hover #resourcesDropDown{
+            display: flex;
+            justify-content: space-between;
+        }
+/* NAVBAR PART END */
     </style>
 </head>
 <body>
+<!-- NAVBAR PART START     -->
     <div id="navBar">
         <div id="navBarLeftPart">
             <a id="navLogo" href="./index.html"><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"></a>
@@ -181,12 +211,12 @@
                     <h5 class="rpHeading">CONTENT OPTIMIZATION</h5>
                        <div class="dropDownDiv" onclick="HeadlineStudio()">
                            <img class="rpdImg" src="./2.png" alt="productsImg3">
-                           <h5 class="rphead">Headline Studio</h5>
+                           <h4 class="rphead">Headline Studio</h4>
                        </div>
                        <h5 class="rpHeading">MARKETING EDUCATION</h5>
                        <div class="dropDownDiv" onclick="ActionableMarketingInstitute()">
                            <img class="rpdImg" src="./3.png" alt="productsImg4">
-                           <h5 class="rphead">Actionable Marketing Institute</h5>
+                           <h4 class="rphead">Actionable Marketing Institute</h4>
                        </div>
                    </div> 
                 </div>
@@ -194,13 +224,69 @@
             <div class="dropDown">
                 <button class="dropBtn">Why CoSchedule</button>
                 <div id="whyCoScheduleDropDown" class="dropDownContent">
-                   
+                   <div onclick="CustomerStories()">
+                       <h4>Case Studies</h4>
+                       <p class="whyBoxPara">See how CoSchedule customers have found success</p>
+                   </div>
+                   <div onclick="BuildYourCaseForCoSchedule()">
+                       <h4>Build Your Case for CoSchedule</h4>
+                       <p class="whyBoxPara">Get your custom ROI report & see what your team could save by switching to CoSchedule</p>
+                   </div>
                 </div>
             </div>
             <div class="dropDown">
                 <button class="dropBtn">Resources</button>
                 <div id="resourcesDropDown" class="dropDownContent">
-
+                    <div>
+                        <h5>LEARN</h5>
+                        <div>
+                            <h4>CoSchedule Blog</h4>
+                            <p>Content to help marketers plan, organize, and meet their goals.</p>
+                        </div>
+                        <div>
+                            <h4>CoSchedule Guide</h4>
+                            <p>How to organize all of your marketing with CoSchedule best practices.</p>
+                        </div>
+                        <div>
+                            <h4>Marketing Ideas Hub</h4>
+                            <p>A list of creative tactics to try out in your marketing strategy.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>TOOLS</h5>
+                        <div>
+                            <p>Headline Analyzer</p>
+                        </div>
+                        <div>
+                            <p>Social Message Optimizer</p>
+                        </div>
+                        <div>
+                            <p>Email Subject Line Tester</p>
+                        </div>
+                        <h5>BOOKS</h5>
+                        <div>
+                            <p>10x Marketing Formula</p>
+                        </div>
+                        <div>
+                            <p>Get Started with Agile Marketing</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>GUIDE</h5>
+                        <div>
+                            <p>Agile Marketing Guide</p>
+                        </div>
+                        <div>
+                            <p>Marketing Strategy Guide</p>
+                        </div>
+                        <div>
+                            <p>Content Marketing Guide</p>
+                        </div>
+                        <h5>PODCAST</h5>
+                        <div>
+                            <p>Actionable Marketing Podcast</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a id="pricing" class="dropBtn" href="./pricing.html">Pricing</a>
@@ -211,7 +297,7 @@
             <a id="createMyCalendar" class="navRightPartLinks" href="./createMyCalender.html">Create My Calendar</a>
         </div>
     </div>
-
+<!-- NAVBAR PART END -->
 
     <script>
         function MarketingCalendar(){
@@ -225,6 +311,12 @@
         }
         function ActionableMarketingInstitute(){
             window.location.href='ActionableMarketingInstitute.html';
+        }
+        function CustomerStories(){
+            window.location.href='CustomerStories.html';
+        }
+        function BuildYourCaseForCoSchedule(){
+            window.location.href='BuildYourCaseForCoSchedule.html'
         }
     </script>
 </body>
