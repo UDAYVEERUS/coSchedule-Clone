@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoSchedule</title>
+    <style>
+        body{
+            background-color: #f8f8f8;
+        }
+        #navBarLeftPart{
+            width: 45%;
+        }
+        #navBar{
+            /* border: 1px solid red; */
+            display: flex;
+            /* height: 100px; */
+            justify-content: space-between;
+        }
+        .dropBtn{
+            border: none;
+            background-color: #f8f8f8;
+            /* border: 1px solid greenyellow; */
+            font-size: 1.15vw;
+            font-weight: bold;
+            margin: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #navBarLeftPart, #navBarRightPart{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+        }
+        #navLogoImg{
+            height: 75px;
+        }
+        .dropBtn:hover{
+            cursor: pointer;
+            color: #f37e5d;
+        }
+        .navRightPartLinks{
+            font-size: 1.15vw;
+            font-weight: bold;
+            margin: auto;
+            color: black;
+            text-decoration: none;
+            /* border: 1px solid red; */
+            padding: 4%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #navBarRightPart{
+            width: 26%;
+        }
+        #createMyCalendar{
+            background-color: #f37e5d;
+            color: white;
+            border-radius: 5px;
+        }
+        #createMyCalendar:hover{
+            background-color: #eb5227e2;
+        }
+        .navRightPartLinks:hover{
+            color: #f37e5d;
+        }
+        #pricing{
+            text-decoration: none;
+            color: black;
+        }
+        #pricing:hover{
+            color: #f37e5d;
+        }
+        .dropDown{
+            margin: auto;
+        }
+        .dropDownContent{
+            /* border: 1px solid rebeccapurple; */
+            display: none;
+            position: absolute;
+        }
+        .dropDown:hover .dropDownContent {display: block;}
+    </style>
+</head>
+<body>
+    <div id="navBar">
+        <div id="navBarLeftPart">
+            <a id="navLogo" href="./index.html"><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"></a>
+            <div class="dropDown">
+                <button class="dropBtn">Products</button>
+                <div id="productsDropDown" class="dropDownContent">
+                    
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Why CoSchedule</button>
+                <div id="whyCoScheduleDropDown" class="dropDownContent">
+                   
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Resources</button>
+                <div id="resourcesDropDown" class="dropDownContent">
+
+                </div>
+            </div>
+            <a id="pricing" class="dropBtn" href="./pricing.html">Pricing</a>
+        </div>
+        <div id="navBarRightPart">
+            <a class="navRightPartLinks" href="./signIn.html">Sign In</a>
+            <a class="navRightPartLinks" href="./GetADemo.html">Get A Demo</a>
+            <a id="createMyCalendar" class="navRightPartLinks" href="./createMyCalender.html">Create My Calendar</a>
+        </div>
+    </div>
+</body>
+</html>
