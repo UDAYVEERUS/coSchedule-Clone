@@ -9,22 +9,21 @@
         body{
             background-color: #f8f8f8;
         }
-        #navBarLeftPart{
-            width: 45%;
-        }
         #navBar{
             /* border: 1px solid red; */
             display: flex;
-            /* height: 100px; */
+            padding: 5px;
+            padding-left: 0%;
             justify-content: space-between;
         }
         .dropBtn{
             border: none;
             background-color: #f8f8f8;
             /* border: 1px solid greenyellow; */
-            font-size: 1.15vw;
+            font-size: 16px;
             font-weight: bold;
             margin: auto;
+            padding: 14px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         #navBarLeftPart, #navBarRightPart{
@@ -33,24 +32,22 @@
             /* border: 1px solid black; */
         }
         #navLogoImg{
-            height: 75px;
+            height: 73px;
+            /* border: 1px solid red; */
         }
         .dropBtn:hover{
             cursor: pointer;
             color: #f37e5d;
         }
         .navRightPartLinks{
-            font-size: 1.15vw;
+            font-size: 16px;
             font-weight: bold;
             margin: auto;
             color: black;
             text-decoration: none;
             /* border: 1px solid red; */
-            padding: 4%;
+            padding: 14px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        #navBarRightPart{
-            width: 26%;
         }
         #createMyCalendar{
             background-color: #f37e5d;
@@ -77,8 +74,80 @@
             /* border: 1px solid rebeccapurple; */
             display: none;
             position: absolute;
+            /* z-index: auto; */
         }
-        .dropDown:hover .dropDownContent {display: block;}
+        .dropDown:hover .dropDownContent{
+            display: block;
+            /* border: 1px solid red; */
+            /* margin-top: 2%; */
+            padding: 10px;
+        }
+        .dropDown:hover #productsDropDown{
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            justify-content: space-between;
+        }
+        .dropDown:hover #leftPart>div , #rightPart>div{
+            display: flex;
+            /* border: 1px solid black; */
+        }
+        .lpdImg{
+            margin: auto;
+            margin-top: 6%;
+            margin-left: 1%;
+            margin-right: 5%;
+            width: 35px;
+            height: 35px;
+        }
+        .rpdImg{
+            margin: auto;
+            /* margin-top: 6%; */
+            margin-left: 1%;
+            margin-right: 3%;
+            width: 25px;
+            height: 25px;
+        }
+        #productsDropDown{
+            right: auto;
+            width: 700px;
+            left: 60px;
+            padding-left: 30px;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* padding: 30px 20px; */
+        }
+        #leftPart{
+            border-right: 1px solid #e9e9e9;
+            padding-right: 20px;
+            width: 59%;
+        }
+        .leftPara{
+            margin-top: -4%;
+            /* border: 1px solid red; */
+        }
+        #leftPartHeading{
+            margin-left: 3%;
+            color: gray;
+            font-weight: bold;
+        }
+        #rightPart{
+            /* margin-left: -5%; */
+            /* border: 1px solid red; */
+            padding: 2%;
+        }
+        .rpHeading{
+            color: gray;
+        }
+        .dropDownDiv{
+            /* border: 1px solid red; */
+            padding-left: 5%;
+            padding-right: 5%;
+            border-radius: 10px;
+        }
+        .dropDownDiv:hover{
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+        }
     </style>
 </head>
 <body>
@@ -88,7 +157,38 @@
             <div class="dropDown">
                 <button class="dropBtn">Products</button>
                 <div id="productsDropDown" class="dropDownContent">
-                    
+                   <div id="leftPart">
+                       <h5 id="leftPartHeading">CONTENT CALENDARS</h5>
+                       <div class="dropDownDiv" onclick="MarketingCalendar()">
+                           <img class="lpdImg" src="./0.png" alt="productsImg1">
+                           <div>
+                            <h4>Marketing Calendar</h4>
+                           
+                            <p class="leftPara">A calendar that helps you see, schedule, and share your marketing.</p>
+                           </div>
+                       </div>
+                       <!-- <br> -->
+                       <div class="dropDownDiv" onclick="MarketingSuite()">
+                           <img class="lpdImg" src="./1.png" alt="productsImg2">
+                           <div>
+                            <h4>Marketing Suite</h4>
+                          
+                            <p class="leftPara">A family of agile marketing products to coordinate your team, projects, and process.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div id="rightPart">
+                    <h5 class="rpHeading">CONTENT OPTIMIZATION</h5>
+                       <div class="dropDownDiv" onclick="HeadlineStudio()">
+                           <img class="rpdImg" src="./2.png" alt="productsImg3">
+                           <h5 class="rphead">Headline Studio</h5>
+                       </div>
+                       <h5 class="rpHeading">MARKETING EDUCATION</h5>
+                       <div class="dropDownDiv" onclick="ActionableMarketingInstitute()">
+                           <img class="rpdImg" src="./3.png" alt="productsImg4">
+                           <h5 class="rphead">Actionable Marketing Institute</h5>
+                       </div>
+                   </div> 
                 </div>
             </div>
             <div class="dropDown">
@@ -111,5 +211,21 @@
             <a id="createMyCalendar" class="navRightPartLinks" href="./createMyCalender.html">Create My Calendar</a>
         </div>
     </div>
+
+
+    <script>
+        function MarketingCalendar(){
+            window.location.href='MarketingCalendar.html';
+        }
+        function MarketingSuite(){
+            window.location.href='MarketingSuite.html';
+        }
+        function HeadlineStudio(){
+            window.location.href='HeadlineStudio.html';
+        }
+        function ActionableMarketingInstitute(){
+            window.location.href='ActionableMarketingInstitute.html';
+        }
+    </script>
 </body>
 </html>
