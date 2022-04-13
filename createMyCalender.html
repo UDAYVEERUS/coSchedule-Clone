@@ -42,7 +42,7 @@
             background-color: #fff;;
             border-radius: 10px;
         }
-       #box{
+       .box{
            width: 95%;
            height: 13px;
            font-size:medium;
@@ -92,15 +92,39 @@
         <p>Free for life. No credit card required.</p>
     </div>
     <form id="calender">
-        <label for="">Full Name</label> <input type="text" placeholder="Full Name" id="box"><br><br>
-        <label for="">Email Address</label> <input type="text" placeholder="Work Email Address" id="box"><br><br>
-        <label for="">Company</label> <input type="text" placeholder="Company Name" id="box"><br><br>
-        <label for="">Website URL</label> <input type="text" placeholder="Company Website URL" id="box"><br><br>
-        <label for="">password</label> <input type="text" placeholder="Password (minimum 8 characters)" id="box"><br><br>
+        <label for="">Full Name</label> <input type="text" placeholder="Full Name" class="box" id="name"><br><br>
+        <label for="">Email Address</label> <input type="text" placeholder="Work Email Address" class="box" id="email"><br><br>
+        <label for="">Company</label> <input type="text" placeholder="Company Name" class="box" id="company"><br><br>
+        <label for="">Website URL</label> <input type="text" placeholder="Company Website URL" class="box" id="website"><br><br>
+        <label for="">password</label> <input type="text" placeholder="Password (minimum 8 characters)" class="box" id="password"><br><br>
         <input type="submit" value="Get Started Now" id="submitBtn">
         <div id="para">
             <p>By clicking "Get Started Now", you agree to CoSchedule’s <a href="">terms of service, end user agreement, and privacy policy;</a> you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p>
         </div>
     </form>
+
+    <script>
+        var signInDetails=JSON.parse(localStorage.getItem('signInDetails')) || [];
+
+        document.querySelector('form').addEventListener('submit',function(){
+            event.preventDefault();
+            var obj={
+                name: document.querySelector('#name').value,
+                email: document.querySelector('#email').value,
+                company: document.querySelector('#company').value,
+                website: document.querySelector('#website').value,
+                password: document.querySelector('#password').value
+            }
+            signInDetails.push(obj);
+            localStorage.setItem('signInDetails',JSON.stringify(signInDetails));
+            alert('Account Created SuccessFully');
+            document.querySelector('#name').value='';
+            document.querySelector('#email').value='';
+            document.querySelector('#company').value='';
+            document.querySelector('#website').value='';
+            document.querySelector('#password').value='';
+
+        })
+    </script>
 </body>
 </html>

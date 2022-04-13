@@ -63,12 +63,16 @@
         }
         #middleGrid{
             display: grid;
+            grid-template-areas: 
+            "a b"
+            "c d"
+            "e f";
             width: 85%;
             /* margin: auto; */
             margin-top: 5%;
             padding: 20px;
             padding-left: 40px;
-            grid-template-columns: repeat(2,1fr);
+            /* grid-template-columns: repeat(2,1fr); */
             /* border: 1px solid red; */
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             background-color: white;
@@ -116,7 +120,7 @@
         #lowerLinkDiv{
             /* border: 1px solid black; */
             text-align: center;
-            width: 25%;
+            width: 150px;
             margin: auto;
             margin-top: 2%;
             border-radius: 7px;
@@ -129,10 +133,35 @@
         }
         #lowerLink{
             text-decoration: none;
-            margin: 10px;
+            /* margin: 10px; */
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: bold;
             color: #f47f7f;
+        }
+        @media all and (max-width: 990px){
+            #middleGrid{
+                grid-template-areas: 
+                "b"
+                "a"
+                "c"
+                "d"
+                "f"
+                "e";
+            }
+            #middleGrid>div>img{
+                 width: 60%;         
+            }
+            .gridtextDiv>h1, p{
+                text-align: center;
+                margin: auto;
+                /* border: 1px solid red; */
+            }
+        }
+        @media all and (max-width: 500px){
+            #middleGrid>div>img{
+                 width: 80%;         
+            }
+            
         }
     </style>
 </head>
@@ -145,25 +174,25 @@
     <p id="headingPara2">CoSchedule Marketing Suite is a family of agile marketing products that helps you coordinate your process, projects, and teams.</p>
 
     <div id="middleGrid">
-        <div class="gridtextDiv">
+        <div style="grid-area: a;" class="gridtextDiv">
             <h1>Complete more work</h1>
             <p>Publish more content to generate a higher ROI by increasing your existing team’s productive work capacity. Eliminate endless email threads, unnecessary meetings, and desk drop-bys to complete 125% more work.</p>
         </div>
-        <div>
+        <div style="grid-area: b;">
             <img src="https://coschedule.com/img/product/suite/suite-complete-more-work.png" alt="">
         </div>
-        <div>
+        <div style="grid-area: c;">
             <img src="https://coschedule.com/img/product/suite/suite-deliver-projects-on-time.png" alt="">
         </div>
-        <div class="gridtextDiv">
+        <div style="grid-area: d;" class="gridtextDiv">
             <h1>Deliver Projects On Time</h1>
             <p>Develop a high-performance team that completes projects on time by balancing the predictability and flexibility of your work. Maintain on-time task completion rates greater than 90%.</p>
         </div>
-        <div class="gridtextDiv">
+        <div style="grid-area: e;" class="gridtextDiv">
             <h1>Prove your value</h1>
             <p>Get full visibility into your marketing operations to prioritize, plan, and manage a reliable pipeline of upcoming and in-flight projects. Focus 100% of your efforts on work that aligns with strategic business goals.</p>
         </div>
-        <div>
+        <div style="grid-area: f;">
             <img src="https://coschedule.com/img/product/suite/suite-prove-your-value.png" alt="">
         </div>
     </div>

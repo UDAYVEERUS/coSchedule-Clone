@@ -78,9 +78,9 @@
         <img id="logo" src="https://accounts.coschedule.com/img/cos-logo-horz.svg" alt="">
          <form id="singInForm">
              <h5>EMAIL ADDRESS</h5>
-             <input type="email" placeholder="Email Address">
+             <input type="email" placeholder="Email Address" id="email">
              <h5>PASSWORD</h5>
-             <input type="password" placeholder="Password">
+             <input type="password" placeholder="Password" id="password">
              <input id="submitBtn" type="submit" value="Sign In">
          </form>
          <div id="linksDiv">
@@ -89,5 +89,30 @@
             <a href="#">Forgot your password ?</a>
          </div>
     </div>
+
+    <script>
+        var signInDetails=JSON.parse(localStorage.getItem('signInDetails')) || [];
+
+        document.querySelector('form').addEventListener('submit',function(){
+            event.preventDefault();
+            var enteredEmail=document.querySelector('#email').value;
+            var enteredPass=document.querySelector('#password').value;
+
+            var flag=false;
+            signInDetails.forEach(element => {
+                if(enteredEmail==element.email && enteredPass==element.password){
+                    flag=true;
+                    alert('Login Successful');
+                    window.location.href='./index.html';
+                    document.querySelector('#email').value='';
+                    document.querySelector('#password').value='';
+                }
+            });
+            if(!flag){
+                alert('Please Provide Correct Details');
+            }
+
+        })
+    </script>
 </body>
 </html>
