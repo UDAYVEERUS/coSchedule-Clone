@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product page</title>
 </head>
 <body>
     <style>
@@ -97,48 +97,73 @@
         background-color: rgb(114, 114, 220);
     }
     
-    .manageSoftware{
-        margin-top: 70px;
-    }
-    .manageSoftware>.softwareText{
-        margin: auto;
+    #secondPartText{
         width: 80%;
-        margin-right: 30px;
-    }
-
-    .softwareGrid{
-        display:grid;
-         grid-gap:45px;
-         width: 85%;
-    
-        margin:auto;
-        grid-template-columns:repeat(3,1fr) ;
-        grid-template-rows: auto;
+        margin: auto;
         text-align: center;
-
+        color: rgb(72, 63, 63);
     }
-    .softwareGrid>div{
-        border: 1px solid black;
-        width: 250px;
+    .secondPartText{
+        width: 70%;
         margin: auto;
-        height: 400px;
-        
+        text-align: center;
+        color: rgb(95, 89, 89);
     }
-    .div2>p{
 
-        line-height: 35px;
-        font-size: 25px;
+
+    #main_marketing{
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; 
+         margin: 50px;
+         padding-bottom: 40px;
+         margin-top: 100px;
+
+
     }
-    .softwareText{
+    #main_marketing>div>h1{
+        padding-top: 40px;
+    }
+    .marketing{
         width: 90%;
+        height: 250px;
         margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-gap: 30px;
+        padding: 30px;
+        margin-top: 40px;
     }
-    .softwareText>h1{
-        color: rgb(86, 86, 75);
-        font-size: 35px;
-        margin-bottom: -10px;
+    .marketing>div{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        padding: 10px;
+        text-align: center;
+       
+    }
+    .marketing>.firstdiv,.marketing>.seconddiv,.marketing>.thirddiv{
+        cursor: pointer;
+    }
+    .marketing>.firstdiv>h1{
+        color: rgb(84, 77, 77);
+    }
+    .marketing>.firstdiv>h3{
+        color: rgb(83, 80, 80);
+    }
+    .marketing>.firstdiv>h4,.marketing>.seconddiv>h4, .marketing>.thirddiv>h4{
+        color: rgb(130, 119, 119);
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .marketing>.seconddiv>h1{
+        margin: -10px;
+        color: rgb(90, 81, 81);
+        font-size: 60px;
+
+    }
+    .marketing>.thirddiv>img{
+        width: 100px;
     }
 
+   
     @media  all and (min-width:85px) and (max-width:451px){
         .products{
          grid-gap: 20px;
@@ -199,7 +224,7 @@
        <p class="p"> <span style="color:rgb(233, 95, 95);margin-right: 5px;">&#10003;</span>See everything together in one place</p>
        <p class="p"><span style="color:rgb(233, 95, 95);margin-right: 5px;">&#10003;</span>Share your progress with higher-ups</p>
        <p class="p"><span style="color:rgb(233, 95, 95);margin-right: 5px;">&#10003;</span>Show what your marketing is doing</p>
-       <button class = "explore">Explore More</button>
+       <button class = "explore" onclick="exploreBtnOne()" >Explore More</button>
     </div>
 
     <div class = "div1">
@@ -210,7 +235,7 @@
        <p class="p"><span style="color:rgb(233, 95, 95);margin-right: 5px;">&#10003;</span>Manage marketing requests</p>
        <p class="p"><span style="color:rgb(233, 95, 95);margin-right: 5px;">&#10003;</span>Eliminate content bottlenecks</p>
        <p class="p"><span style="color:rgb(233, 95, 95);margin-right: 5px;">&#10003;</span>Maximize resources to increase output</p>
-       <button class = "explore">Explore More</button>
+       <button class = "explore" onclick="exploreBtnTwo()">Explore More</button>
     </div>
 
     <div class = "div1">
@@ -232,41 +257,55 @@
        <p class="p"><span style="color:rgb(122, 122, 244);margin-right: 5px;">&#10003;</span>Improve your marketing with fluff-free training</p>
        <p class="p"><span style="color:rgb(122, 122, 244);margin-right: 5px;">&#10003;</span>Spend less time learning & more time doing</p>
        <p class="p"><span style="color:rgb(122, 122, 244);margin-right: 5px;">&#10003;</span>Learn from industry pros you trust</p>
-       <button class = "explore2">Explore More</button>
+       <button class = "explore2" >Explore More</button>
     </div>
 
 </div>
 
+<div id = "main_marketing">
 
-<div class = "manageSoftware">
-    <div class = "softwareText">
-        <h1>The fastest growing marketing work management software</h1>
-        <p>CoSchedule is trusted by 30,000 marketers in 100+ countries.</p>
-
-    </div>
-    <div class = "softwareGrid">
-        <div class = "div2">
-            <h1 style = "margin-bottom: -15px;">Gartner</h1>
-            <h2>Magic Quadrant</h2>
-            <p style = "margin: 0px;">The Gartner magic Quadrant for content Marketing Platforms 2020 </p>
-
-        </div>
-        <div class="div2">
-            <h1>Inc</h1>
-            <h1>5000</h1>
-            <p style = "margin: 0px;">One Of The Fastest-Growing Marketing Platforms 3 Years In a Row</p>
-        </div>
-        <div class="div2">
-            <img src = "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=256&q=75" style = "width: 150px;height: 150px;margin-top: 30px;"/>
-            <p style="margin-left: 0px;" >Awarded High Performer in 5 Product Categories</p>
-
-        </div>
-
-    </div>
-
-
+<div id = "secondPartText">
+    <h1>The fastest growing marketing work management software</h1>
 </div>
+<div class = "secondPartText">
+    <h3>CoSchedule is trusted by 30,000 marketers in 100+ countries.</h3>
+</div>
+ 
 
+<div  class = "marketing">
+    
+   <div class = "firstdiv" onclick="div()">
+       <h1>Gartner</h1>
+       <h3>Magic Quadrant</h3>
+       <h4>The Gartner Magic Quadrant for Content Marketing Platforms 2020</h4>
+    </div>
+
+       <div class="seconddiv">
+           <h1>Inc<br>5000</h1>
+           <h4>One Of The Fastest-Growing Marketing Platforms 3 Years in a Row</h4>
+       </div>
+
+       <div class="thirddiv">
+           <img src = "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=256&q=75"/>
+           <h4>Awarded High Performer Product Categories</h4>
+       </div>
+
+   </div>
+</div>
     
 </body>
 </html>
+<script>
+    function exploreBtnOne(){
+        window.location.href = "marketingCalendar.html";
+    }
+
+    function exploreBtnTwo(){
+        window.location.href = "marketingSuite.html"
+    }
+
+    function div(){
+        window.location.href = "marketingSuite.html"
+
+    }
+</script>
