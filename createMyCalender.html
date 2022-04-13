@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create My Calendar</title>
+    <style>
+        body{
+            display: block;
+        }
+        *{
+            background-color: rgb(248, 248, 237);
+            font-family: "MuseoSans-700",sans-serif; 
+            box-sizing: border-box;
+        }
+      
+        #starting{
+            text-align: center;
+            
+        }
+        #starting>h1{
+            font-size:40px;
+        }
+        #starting>p{
+            font-size: 15px;
+            margin-top: -20px;
+        }
+        #calender{
+            
+            /* margin: auto; */
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            width: 40%;
+            height: auto;
+            padding: 20px;
+            margin: auto;
+            margin-top:50px;
+            background-color: #fff;;
+        
+        }
+       #box{
+           width: 95%;
+           height: 13px;
+           font-size:medium;
+           /* /* marginauto; */
+           padding: 18px; 
+           margin-top:10px
+       }
+       #submitBtn{
+        
+         display:flex;
+         margin-left: 70%;
+         padding: 15px;
+         background-color: orangered;
+         border: 0px solid white;
+         border-radius: 5px;
+       }
+       @media all and (min-width:300px) and (max-width:650px){
+        #calender{
+            width:90%;
+            height: auto;        
+        }
+        #para{
+            width: 90%;
+            height: auto;
+        }
+        #submitBtn{
+            width:30%;
+            margin-left:65%
+        }                                                                                                                              
+    }
+       #para{
+           font-size: small;
+           text-align: center;
+           
+       }
+    </style>
 </head>
 <body>
-    
+    <div id="starting">
+        <h1>Create My Marketing Calendar</h1>
+        <p>Free for life. No credit card required.</p>
+    </div>
+    <form id="calender">
+        <label for="">Full Name</label> <input type="text" placeholder="Full Name" id="box"><br><br>
+        <label for="">Email Address</label> <input type="text" placeholder="Work Email Address" id="box"><br><br>
+        <label for="">Company</label> <input type="text" placeholder="Company Name" id="box"><br><br>
+        <label for="">Website URL</label> <input type="text" placeholder="Company Website URL" id="box"><br><br>
+        <label for="">password</label> <input type="text" placeholder="Password (minimum 8 characters)" id="box"><br><br>
+        <input type="submit" value="Get Started Now" id="submitBtn">
+        <div id="para">
+            <p>By clicking "Get Started Now", you agree to CoSchedule’s <a href="">terms of service, end user agreement, and privacy policy;</a> you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p>
+        </div>
+    </form>
 </body>
 </html>
