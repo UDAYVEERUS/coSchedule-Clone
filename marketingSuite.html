@@ -6,8 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MarketingSuite</title>
 </head>
+<style>
+    .marketh1{
+        text-align: center;
+        font-size: 40px;
+        width: 80%;
+        margin: auto;
+        color: rgb(94, 82, 82);
+    }
+    .marketingSuits1,.marketingSuits2 {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .marketingSuits1>div> img,.marketingSuits2>div>img{
+        width: 500px;
+        height: 500px;
+
+    }
+    .text > h1{
+        color: rgb(71, 61, 61);
+        font-size: 50px;
+        margin-top: 90px;
+    }
+    .text > p{
+        color: rgb(108, 99, 99);
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .text > .button{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(221, 202, 169);
+        font-size: large;
+        border: none;
+        border-radius: 5px;
+        color: red
+    }
+    .text>.button:hover{
+        background-color: rgb(209, 143, 63);
+        cursor: pointer;
+    }
+    .text > .button2{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(164, 112, 237);
+        font-size: large;
+        border: none;
+        border-radius: 5px;
+        color: white
+    }
+    .text>.button2:hover{
+        background-color: rgb(209, 143, 63);
+        cursor: pointer;
+    }
+</style>
 <body>
     <!-- <h1>Marketing Suite</h1> -->
+    <h1 class = "marketh1">Explore the Marketing Suite</h1>
+
+    <div class="marketingSuits1">
+        <div class = "img">
+            <img src = "https://coschedule.com/img/product/suite/suite-marketing-calendar2.png"/>
+        </div>
+        <div class = "text" >
+            <h1>Visualize everything in real time</h1>
+            <p>See every project on a unified calendar of record. Keep stakeholders "in the know.” Manage marketing requests and pivot quickly when priorities change.</p>
+            <button class="button">Explore More</button>
+        </div>
+
+    </div>
     
+    <div class="marketingSuits2">
+        
+        <div class = "text" >
+            <h1>Eliminate content bottlenecks from idea to promotion</h1>
+            <p>Optimize your editorial process to save time and deliver more. Centralize publishing and promotion by connecting your tools.</p>
+            <button class="button2">Explore More</button>
+        </div>
+
+        <div class = "img">
+            <img src = "https://coschedule.com/img/product/suite/suite-marketing-calendar2.png"/>
+        </div>
+
+    </div>
+
+    <div class="marketingSuits1">
+        <div class = "img">
+            <img src = "https://coschedule.com/img/product/suite/suite-work-organizer.png"/>
+        </div>
+        <div class = "text" >
+            <h1>Maximize resources to increase output</h1>
+            <p>Implement consistent, defined workflows to speed up production and identify how urgent changes impact proactively planned work.</p>
+            <button class="button">Explore More</button>
+        </div>
+
+    </div>
+
+    <div class="marketingSuits2">
+        
+        <div class = "text" >
+            <h1>Catalog and maintain control of brand assets</h1>
+            <p>Customize taxonomies to quickly find, update, and share files. Securely share folders and files with stakeholders to make sure your work is up-to-date.</p>
+            <button class="button2">Explore More</button>
+        </div>
+
+        <div class = "img">
+            <img src = "https://coschedule.com/img/product/suite/suite-asset-organizer.png"/>
+        </div>
+
+    </div>
 </body>
 </html>
