@@ -5,8 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Suite</title>
+    <style>
+        body{
+            background-color: #f1efef;
+        }
+        #mainHeading{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* border: 1px solid red; */
+            width: 60%;
+            color: rgb(58, 56, 56);
+            text-align: center;
+            font-weight: bolder;
+            font-size: 50px;
+            padding: 22px;
+            font-weight: 300;
+            margin: auto;
+        }
+        #headingPara1{
+            /* border: 1px solid red; */
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            font-family: "Merriweather",serif;
+            font-size: 20px;
+            
+        }
+        #headingDiv{
+            /* border: 1px solid black; */
+            text-align: center;
+            width: 15%;
+            padding: 15px;
+            margin: auto;
+            margin-top: 2%;
+            border-radius: 5px;
+            background-color: #f37e5d;
+        }
+        #headingDiv:hover{
+            background-color: #eb5227e2;
+            cursor: pointer;
+        }
+        #headingLink{
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            padding: 5px;
+            color: white;
+
+        }
+        #headingPara2{
+            /* border: 1px solid red; */
+            width: 38%;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            margin-top: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #middleGrid{
+            display: grid;
+            width: 85%;
+            /* margin: auto; */
+            margin-top: 5%;
+            padding: 20px;
+            padding-left: 40px;
+            grid-template-columns: repeat(2,1fr);
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            background-color: white;
+            border-radius: 5px;
+            gap: 10px;
+        }
+        #middleGrid>div{
+            /* border: 1px solid black; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 10px;
+            text-align: center;
+        }
+        #middleGrid>div>img{
+           
+            width: 70%;
+        }
+        .gridtextDiv>h1,p{
+            text-align: left;
+        }
+        .gridtextDiv>p{
+            width: 60%;
+        }
+        .gridtextDiv{
+            margin: auto;
+        }
+        #lowerDiv{
+            /* border: 1px solid black; */
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            border-radius: 5px;
+            width: 50%;
+            margin: auto;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            padding: 70px;
+            /* height: 400px; */
+            background: linear-gradient(90deg, #f47f7f 0%, #835ce5 100%);
+        }
+        #lowerDiv>h1{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+        #lowerLinkDiv{
+            /* border: 1px solid black; */
+            text-align: center;
+            width: 25%;
+            margin: auto;
+            margin-top: 2%;
+            border-radius: 7px;
+            background-color: whitesmoke;
+            
+            padding: 10px;
+        }
+        #lowerLinkDiv:hover{
+            cursor: pointer;
+        }
+        #lowerLink{
+            text-decoration: none;
+            margin: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: #f47f7f;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 id="mainHeading">Take Control Of Your Process And Bring Your Team Together.</h1>
+    <p id="headingPara1"><i>Complete more work. Deliver projects on time. Prove your value.</i></p>
+    <div id="headingDiv">
+        <a id="headingLink" href="./GetADemo.html">Request Your Demo</a>
+    </div>
+    <p id="headingPara2">CoSchedule Marketing Suite is a family of agile marketing products that helps you coordinate your process, projects, and teams.</p>
+
+    <div id="middleGrid">
+        <div class="gridtextDiv">
+            <h1>Complete more work</h1>
+            <p>Publish more content to generate a higher ROI by increasing your existing team’s productive work capacity. Eliminate endless email threads, unnecessary meetings, and desk drop-bys to complete 125% more work.</p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/img/product/suite/suite-complete-more-work.png" alt="">
+        </div>
+        <div>
+            <img src="https://coschedule.com/img/product/suite/suite-deliver-projects-on-time.png" alt="">
+        </div>
+        <div class="gridtextDiv">
+            <h1>Deliver Projects On Time</h1>
+            <p>Develop a high-performance team that completes projects on time by balancing the predictability and flexibility of your work. Maintain on-time task completion rates greater than 90%.</p>
+        </div>
+        <div class="gridtextDiv">
+            <h1>Prove your value</h1>
+            <p>Get full visibility into your marketing operations to prioritize, plan, and manage a reliable pipeline of upcoming and in-flight projects. Focus 100% of your efforts on work that aligns with strategic business goals.</p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/img/product/suite/suite-prove-your-value.png" alt="">
+        </div>
+    </div>
+    <div id="lowerDiv">
+          <h1>Start completing more marketing with Marketing Suite</h1>
+          <div id="lowerLinkDiv">
+            <a id="lowerLink" href="./GetADemo.html">Request Your Demo</a>
+          </div>
+    </div>
 </body>
 </html>
