@@ -168,7 +168,7 @@
 <body>
     <h1 id="mainHeading">Take Control Of Your Process And Bring Your Team Together.</h1>
     <p id="headingPara1"><i>Complete more work. Deliver projects on time. Prove your value.</i></p>
-    <div id="headingDiv">
+    <div onclick="GetADemo()" id="headingDiv">
         <a id="headingLink" href="./GetADemo.html">Request Your Demo</a>
     </div>
     <p id="headingPara2">CoSchedule Marketing Suite is a family of agile marketing products that helps you coordinate your process, projects, and teams.</p>
@@ -198,9 +198,14 @@
     </div>
     <div id="lowerDiv">
           <h1>Start completing more marketing with Marketing Suite</h1>
-          <div id="lowerLinkDiv">
+          <div onclick="GetADemo()" id="lowerLinkDiv">
             <a id="lowerLink" href="./GetADemo.html">Request Your Demo</a>
           </div>
     </div>
+    <script>
+        function GetADemo(){
+            window.location.href='GetADemo.html';
+        }
+    </script>
 </body>
 </html>

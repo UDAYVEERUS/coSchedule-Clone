@@ -1,12 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
     
+    <title>Pricing</title>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#bg {
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+#logo {
+
+    /* border: 5px solid red; */
+    width: 15%;
+    margin: auto;
+    display: block;
+
+}
+
+#heading  {
+    display: flex;
+    /* border: 2px solid green; */
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    color: #4b4b4b;
+    font-family: "MuseoSans-700", sans-serif;
+    font-weight: normal;
+}
+
+#heading p {
+    margin-top: 10px;
+    color: #4b4b4b;
+    font-weight: lighter;
+    line-height: 170%;
+}
+
+#contaner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 25px;
+    /* border: 1px solid red; */
+}
+
+.con1 {
+    height: 715px;
+}
+
+.con2 {
+    height: 845px;
+}
+
+.con3 {
+    height: 974px;
+}
+
+.con1 , .con2 ,.con3 {
+    /* border:1px solid blue; */
+    border-top: 5px solid #EA5C2B;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: white;
+}
+
+.contImage {
+    display: flex;
+    justify-content: right;
+    /* position: absolute; */
+    /* width: 420px; */
+    margin-top: -2%;
+    /* right: 763px; */
+    /* top: 240px; */
+    
+    /* border: 1px solid black; */
+
+}
+
+.contImage>img {
+    width: 9%;
+    /* margin: 0%; */
+    margin-top: -4%;
+    margin-left: 2%;
+    position: absolute;
+    /* border: 1px solid red; */
+}
+
+.contentTop {
+    text-align: center;
+    padding: 20px;
+}
+
+.contentTop h3 {
+    font-weight: bold;
+    color: #4b4b4b;
+    font-family: "MuseoSans-700", sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    margin: 0;
+    line-height: 170%;
+}
+
+.contentTop h1 {
+    font-size: 40px;
+    line-height: 143%;
+    color: rgb(85, 83, 83);
+
+}
+
+.contentTop p {
+    font-size: 14px;
+    line-height: 140%;
+    color: #787878;
+    font-family: "MuseoSans-300", sans-serif;
+    font-weight: lighter;
+    width: 89%;
+}
+
+
+.contentMid {
+    text-align: center;
+    /* padding: 20px; */
+    margin-top: 30px;
+
+}
+
+.contentMid h2 {
+    font-size: 35px;
+    color: rgb(62, 60, 60);
+}
+
+.botH2 {
+    font-weight: lighter;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.contentMid h3 {
+    font-size: 20px;
+    color: #4b4b4b;
+    font-family: "MuseoSans-700", sans-serif;
+}
+
+.contentMid p {
+    text-align: center;
+    margin-left: 20px;
+    line-height: 28px;
+    font-weight: lighter;
+    color: #787878;
+}
+
+.contentMid p+p {
+    text-align: center;
+    margin-left: 20px;
+    text-decoration: underline;
+    color: #EA5C2B;
+    /* line-height: 28px; */
+}
+
+.firstBtn{
+    margin-top: 56px;
+}
+.contentBtn {
+    /* border: 1px solid green; */
+    /* width: %; */
+    /* margin: auto; */
+    margin-top: 25PX;
+    padding: 20PX;
+    text-align: center;
+}
+
+.contentBtn button {
+    background-color: #f0815c;
+    color: white;
+    text-align: center;
+    padding: 13px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+
+}
+.contentBtn button:hover{
+    cursor: pointer;
+    background-color: #ea6031;
+}
+
+#btn {
+    background-color: white;
+    color: #EA5C2B;
+    border: 2px solid #EA5C2B;
+
+}
+#btn:hover{
+    cursor: pointer;
+}
+.contentBot {
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+.contentBot img{
+  
+    width: 5%;
+}
+.contentBot p {
+    color: #cac9c9;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contentBot>ul {
+    list-style: outside;
+
+
+
+}
+
+.contentBot>ul>li {
+    list-style: url(https://coschedule.com/img/orange-checkmark.svg);
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 224%;
+    color: #787878;
+
+}
+
+.line {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgb(207, 203, 203);
+}
+
+.line+div {
+
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.features {
+    color: #bbb7b7;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+
+#quote {
+    /* display: flex; */
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    /* border: 1px solid red  */
+
+}
+
+#quote h3 {
+    color: #a5a5a5;
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.girlImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.girlImg img {
+    margin-top: 15px;
+    width: 10%;
+    border-radius: 50%;
+    
+
+}
+
+.girlImg p {
+    margin-top: 23px;
+    margin-left: 20px;
+    line-height: 150%;
+    color: #a5a5a5;
+    font-size: medium;
+    font-family: sans-serif;
+
+
+}
+#fact{
+    width: 10%;
+    margin: auto;
+    margin-top: 50px;
+}
+#fact h2{
+    font-weight: bold;
+    color: #4b4b4b;
+font-family: sans-serif;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: -0.3px;
+text-transform: none;
+}
+#fact hr{
+    margin-top: 20px;
+    border: 2px solid  #d0c9c9;
+    width: 80%;
+}
+#bottom{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: auto;
+    margin-top: 40px;
+    gap:35px;
+}
+.qna h3{
+    font-weight: bold;
+     font-family: sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 170%;
+    color: #4b4b4b;;
+}
+.qna p{
+    font-size: 17px;
+    font-family: sans-serif;
+    line-height: 170%;
+    color: #4b4b4b;
+
+}
+.qna a{
+    color: #EA5C2B;
+}
+
+
+@media all and (min-width:451px) and (max-width: 784px){
+    #bottom{
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}
+#contaner {
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+
+  
+}
+.contentTop h3 {
+    font-weight: bold;
+    color: #4b4b4b;
+    font-family: "MuseoSans-700", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0;
+    line-height: 170%;
+}
+.contentTop p {
+    font-size: 25px;
+    line-height: 140%;
+    color: #787878;
+    font-family: "MuseoSans-300", sans-serif;
+    font-weight: lighter;
+    width: 89%;
+}
+.contentTop h1 {
+    font-size: 52px;
+    line-height: 143%;
+    color: rgb(85, 83, 83);
+
+}
+.contentMid h3 {
+    font-size: 30px;
+    color: #4b4b4b;
+    font-family: "MuseoSans-700", sans-serif;
+}
+.contentMid p {
+    text-align: center;
+    margin-left: 20px;
+    line-height: 28px;
+    font-weight: lighter;
+    color: #787878;
+    font-size: 20px;
+}
+#heading h1{
+ font-size: 20px;
+ text-align: center;   
+}
+#heading p{
+    font-size: 15px;
+}
+#quote h3 {
+    /* color: #a5a5a5; */
+    text-align: center;
+    font-size: 20px;
+    /* font-family: sans-serif; */
+}
+#fact hr{
+    margin-top: 10px;
+    border: 2px solid  #d0c9c9;
+    width: 120%;
+}
+.firstBtn{
+    margin-top: 15px;
+}
+.contentBot {
+   display: none;
+}
+.contImage>img {
+    width: 15%;
+    margin-left: 4%;
+}
+.con1 {
+    height: auto;
+    
+}
+
+.con2 {
+    height: auto;
+    
+}
+
+.con3 {
+    height: auto;
+    
+}
+#logo {
+
+    /* border: 5px solid red; */
+    width: 40%;
+    margin: auto;
+    display: block;
+
+}
+
+}
+
+
+@media all and (min-width:86px) and (max-width: 600px){
+    #bottom{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,  1fr);
+
+    }
+    .contentBot {
+   visibility: hidden;
+    
+}
+#contaner {
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+
+  
+}
+#logo {
+
+    /* border: 5px solid red; */
+    width: 40%;
+    margin: auto;
+    display: block;
+
+}
+.con1 {
+    height: auto;
+}
+
+.con2 {
+    height: auto;
+}
+
+.con3 {
+    height: auto;
+}
+}
+    </style>
+   
+</head>
+
+<body>
+    <div id="bg">
+        <div id="logo">
+            <a href="index.html">
+
+
+                <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="">
+            </a>
+        </div>
+        <div id="heading">
+            <h1>Organize Your Marketing With Content Calendar Software by CoSchedule</h1>
+            <p>Try it free. No credit card required. </p>
+        </div>
+        <div id="contaner">
+
+            <div class="con1">
+                <div class="contImage"><img src="https://coschedule.com/img/pricing/mc-free-badge-01.png" alt="designe">
+                </div>
+                <div class="contentTop">
+
+                    <h3>Marketing Calendar</h3>
+                    <h1>Free</h1>
+                    <p>The forever-free marketing calendar to see everything in one place.</p>
+                </div>
+                <div class="contentMid">
+                    <h2>$0</h2>
+                    <h3>Free Forever</h3>
+                </div>
+                <div class="contentBtn">
+
+                    <a href="./createMyCalender.html"><button class="firstBtn">Get Started Free</button></a>
+                </div>
+                <div class="contentBot">
+                    <ul>
+                        <li>
+                            Personal Project & Task Management
+                        </li>
+                        <li>
+                            Unlimited Marketing Projects and content
+                        </li>
+                        <li>
+                            Marketing & Project Management Integrations
+                        </li>
+                        <li>
+                            Social Media Publishing 
+                        </li>
+                        <li>
+                            Self-Serve Knowledge Base
+                        </li>
+                        <li>
+                            Basic Support
+                        </li>
+
+                    </ul>
+                </div>
+                    <hr class="line">
+                    <div>
+
+                        <a class="features" href="#">See All Features</a>
+                    </div>
+               
+            </div>
+            <div class="con2">
+                <div class="contentTop">
+                    <h3>Marketing Calendar</h3>
+                    <h1>Pro</h1>
+                    <p>The advanced marketing calendar with limitless publishing to gain even more control.</p>
+                </div>
+                <div  class="contentMid dynamic">
+                    <h2 id="opration1">$29</h2>
+                    <h3>per user / month</h3>
+                    <p id="opration2">Billed Annually</p>
+                    <p id="opration3">Switch to Monthly</p>
+                </div>
+                <div class="contentBtn">
+                    <a href="./createMyCalender.html"><button>Get Started Free</button></a>
+                </div>
+                <div class="contentBot">
+                    <ul>
+                        <li>
+                            Real-Time Marketing Calendar
+                        </li>
+                        <li>
+                            Unlimited Read-Only Observer Calendar Views
+                        </li>
+                        <li>
+                            Simultaneous Team Member Access & Collaboration
+                        </li>
+                        <li>
+                            Customizable Task Workflow Templates
+                        </li>
+                        <li>
+                            Unlimited Social Media Publishing <span><img src="data:image/png;base64,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" alt=""></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwgUP8pIoZ1AVswHmJNfFlNoTYWheMM6Ex9Q&usqp=CAU" alt=""></span>
+                            <span>
+                                <br>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///+EgoR8enyBf4Hg3+DEw8Tb2tvV1dV6enqWlpaTkpOLi4uMiYyCf4KPjY+qqqqenp6ko6SdnJ2rq6v4+Pjw8fCpqqnOz87JycnAwMC5ubmzs7PV1tXr6uvm5ubz9PN0cnQJAqtrAAAD4ElEQVR4nO3d627iMBSFUWJDuTchhIZr6fs/5VCNikANDMd4zj42+/tbqfKSIQmJk/R6uJpVf9i26+8GXa1/6gMHGVZzGG7KeubdOd/V+a9b9IBFNW+b6mTzc188mk9IuFrXJ9zjtr/Nd+hxP1jT1qePo1CXkPC4nQbxTvkUhM2ucGG8RISt+LuXlvBQh89fEsK2eGYCExBun5tA+8KPp4GFX6IR91o8D7QtLCMATQt3MYCWhesowMKXaMitPp/cS9gXznIXPr8j/BEu0JTuDpFm0K6wzF0YbwqtCuNNoVHhMdZm5ltYoTVdRdrZGxbO4gFtCg8Rp9CmcBBTOLcorOcxhTWa87tjRJ9NYT/mh9SkMOrXsPAGhREPaIwKx7kLm5g+k8JV1K+hRWHcTalFYZu9MOYPC5vCjXhTel54MerKnnArFHo32e4/Vw163I+3kx13+/c39IilLWVzODuiByxOJnR79HjlCQ9L0cMNaCERmr0qcS+R0G3Qww2oFgkT/BrKfjy59FaPSoUH9HADmoiEK/RwA6LwWpjeEU2v9y4RjpIUCoDFKKGfFOcovMplLxyhRxuS6PJoknMoEr7AHKJHG5JI6NGjDYnCFxOmeJqGQgoTSCScokcbkkg4Q482JM4hhXY69rubioQ3/slFnzDh25frTAI8/bj4Z2OcMO6KhFsB7+zSEuKuTikJXZu9ELeQQetTCtyWKglx126UhAXufKOWEAZUEs6Bx3U6QuTSRKU5BC64UZpD4GOidIRukL0Qd9CmJQSuPlUS4g7atITABTc6QuQlVKW9RfZC5Mk4FaHHnYfSEiKfqKAjRD7LTEeIXAeuInTr7IXIle46QuBBm5IQuUpaZ0uDXEOsIpwi1y5qCP0ECNQRQm+RVRFCb21TEUIfQKshRJ5piyXsfGvAua8hVBhlpcK4o7quq6palLttC13oftzvh7/b70WrTZJc9SW634JCk1FIof1EQtNrE29FIYX2ozADoeRu9SSFoicOUGgyCim0H4WXzaHntEMTCd/Row2JQgrtRyGF9qOQQvvxqO0y7FqL0Cik0H4Upi+UPEeYQptJnuedppBzmL4w/zkUCZG3NQVHIYX2o5BC+4n2+BSaTPI2YAptRiGF9hMJ7b2g8oFEe4s0hZzD5IUVhRSaj8IXE1bo0YZEYfpCydtyKbQZhRTaj8IrIfKhgcFRSKH9KKTQfhRSaL/8hWX2wg/JdQsKTbbMXlhmL8z/U5q/MP9PqUgIfYpuaEvJHp9Ck1FIof0opNB+EiHyDZXh7Sik0HwUUmi//IVLd/+tHJe5JIXDweNt/vc7SP4AMfRcB839RKMAAAAASUVORK5CYII=" alt="">
+                            </span>
+                            <span><img src="data:image/jpeg;base64,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" alt=""></span>
+                            <span><img src="data:image/png;base64,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" alt=""></span>
+                        </li>
+                        <li>
+                            Bulk Social Media Scheduling
+                        </li>
+                        <li>
+                            Social Media Automation & Campaign Templates
+                        </li>
+                        <li>
+                            Priority Support
+                        </li>
+
+                    </ul>
+                </div>
+                <hr class="line">
+                <div>
+                    <a class="features" href="#">See All Features </a>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="con3">
+                <div class="contentTop">
+                    <h3>Marketing Suite</h3>
+                    <h1>Business</h1>
+                    <p>A family of agile marketing products to complete more work and prove your team’s value.</p>
+                </div>
+                <div class="contentMid">
+                    <h2 class="botH2">Let's Talk</h2>
+
+                </div>
+                <div class="contentBtn">
+                    <a href="./GetADemo.html"><button id="btn">contact Sales</button></a>
+                </div>
+                <div class="contentBot">
+                    <p>Includes all Marketing Calendar Pro capabilities, plus:</p>
+                    <ul>
+                        <li>
+                            Calendar Team Filtering
+                        </li>
+                        <li>
+                            Marketing Request Management
+                        </li>
+                        <li>
+                            Multi-Channel Campaigns
+                        </li>
+                        <li>
+                            Single Sign-On & Security
+                        </li>
+                        <li>
+                            Custom User Access & Permissions
+                        </li>
+                        <li>
+                            Automatic Marketing Campaigns
+                        </li>
+                        <li>
+                            Custom Project Templates
+                        </li>
+                        <li>
+                            Workflow Automation & Bottleneck Mitigation
+                        </li>
+                        <li>
+                            Asset & File Management Storage
+                        </li>
+                        <li>
+                            File Sharing Enablement
+                        </li>
+                        <li>
+                            Detailed Project, Work, & Team Analytics
+                        </li>
+                        <li>
+                            Team Performance Reporting
+                        </li>
+                        <li>
+                            Advanced Premium Integrations
+                        </li>
+                        <li>
+                            1:1 Customer Success Management
+                        </li>
+
+
+                    </ul>
+                </div>
+                    <hr class="line">
+                    <div>
+
+                        <a class="features" href="#">Calculate Your ROI</a>
+                    </div>
+                
+            </div>
+
+
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div id="quote">
+        <div>
+            <h3>"CoSchedule helps me easily see what’s on each person’s plate and shift or re-prioritize workloads when
+                necessary."</h3>
+        </div>
+        <div class=" girlImg">
+
+            <img src="https://coschedule.com/img/testimonials/moria-fredrickson-blue-medora.jpg" alt="medora">
+            <p> Moria Fredrickson <br> Blue Modera</p>
+
+        </div>
+    </div>
+    <div id="fact">
+        <h2>FAQs</h2>
+        <hr>
+    </div>
+   <div id="bottom">
+       <div class="qna">
+        <h3>I’m just a getting started. How can I learn more about CoSchedule?</h3>
+        <p>You can start right here by digging into our <a href="#">Getting Started</a>  page or checking out onboarding videos in the <a href="#">Actionable Marketing Institute.</a></p>
+    
+       </div>
+       <div class="qna">
+        <h3>
+            How do I upgrade from a Free to a Pro plan?</h3>
+       
+            </h3>
+            <p>It’s easy! Just visit the billing page in your account. There you can select a new plan. Once you complete the billing prompts, your account will automatically upgrade to Pro.</p>
+       
+       </div>
+       <div class="qna">
+        <h3>How do I get started with Marketing Suite?</h3>
+        <p> <a href="#">Click here</a> to receive a demo of the CoSchedule Marketing Suite. You'll learn how it can help you coordinate your team, projects, and process.</p>
+        
+       </div>
+       <div class="qna">
+        <h3>Which payment types do you accept?</h3>
+        <p>Plastic is fantastic. We accept credit card payments for all of our paid plans. (Credit cards are not required for Marketing Calendar Free.) We may also accept other payment types for Marketing Suite. Check with your account executive for details. For more information on billing, visit our Billing FAQs support doc.</p>
+       </div>
+       <div class="qna">
+        <h3>Do you offer discounts for nonprofits?</h3>
+        <p>To make it easier for your nonprofit to organize all of your marketing with CoSchedule, we offer a 30% discount on all of our paid plans. <a href="#">Click here</a> to learn more.</p>
+       </div>
+       <div class="qna">
+        <h3>Where can I find other helpful resources?</h3>
+        <p>Our <a href="#"> CoSchedule Guides</a> will show you how to get totally organized in CoSchedule. And the <a href="#">Actionable Marketing Institute</a> is chock full of video gold to help you maximize your marketing</p>
+       </div>
+   </div>
+
 </body>
+<script>
+     document.querySelector("#opration3").addEventListener('click',chang());
+     function chang(){
+         var text = document.querySelector('#opration3').innerText
+
+         if( text == "Switch to Monthly"){
+           
+            // document.querySelector("#opration1").innerText="$39"
+            // document.querySelector("#opration2").innerText="Billed Monthaly"
+         }
+     }
+</script>
+
 </html>
