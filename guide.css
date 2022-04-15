@@ -1,0 +1,409 @@
+* {
+    margin: 0px;
+    padding-inline: 0px;
+}
+
+#bgColor {
+    background-color: #F8F8F8;
+    /* height: 300px; */
+}
+
+#nav {
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+    /* height: 1000px; */
+}
+
+#nav img {
+    width: 50%;
+}
+
+#nav span {
+    font-size: 30px;
+    font-weight: 100px;
+    font-family: sans-serif;
+    color: rgb(201, 201, 201);
+}
+
+#nav input {
+    padding: 15px 39px;
+    border-radius: 20px;
+    border: 1px solid rgb(228, 225, 225);
+
+}
+
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    line-height: 140%;
+    width: 100%;
+}
+
+#head p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2f2f2f;
+    max-width: 100%;
+    font-family: sans-serif;
+    line-height: 400%;
+}
+
+#boxes {
+    display: grid;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+}
+
+.shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 30PX;
+    /* border: 2px solid green ; */
+    margin-top: 30px;
+}
+
+#boxes img {
+    width: 185px;
+    height: 240px;
+
+}
+
+#boxes img:hover {
+   cursor: pointer;
+   zoom: 110%;
+
+}
+
+.bgImg1 {
+
+    background-image: url(https://media.coschedule.com/uploads/2021/09/Social-templates-cover-art-thumbnail-background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg2 {
+
+    background-image: url(https://media.coschedule.com/uploads/Jessica_Guide_CH1_blur-11.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg3 {
+
+    background-image: url(https://media.coschedule.com/uploads/full_mia-getting-started-cover_background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg4 {
+
+    background-image: url(https://media.coschedule.com/uploads/Emily-GS-Guide-Background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg5 {
+
+    background-image: url(https://media.coschedule.com/uploads/Getting-Started-Tier1_Full_Background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg6 {
+
+    background-image: url(https://media.coschedule.com/uploads/2020/08/ReQueue-Guide-Cover-Blurred-1.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boxes h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #4b4b4b;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#boxes p {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #c1bdbd;
+    margin-top: 20px;
+    /* text-align: center; */
+}
+#bottomBoxes{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    gap:20px; 
+    grid-template-columns: repeat(3, 1fr);
+}
+#bottomBoxes div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 30px;
+}
+#bottomBoxes img{
+    width:100%;
+}
+#bottomBoxes h3{
+    color: #4b4b4b;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    /* text-align: center; */
+    margin-left: 30px;
+    line-height: 20px;
+}
+#bgColorH{
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+#bgColorH h1{
+    text-align: center;
+   margin-bottom: 30px;
+   font-family: sans-serif;
+
+}
+@media all and (min-width:451px) and (max-width: 800px){
+    #boxes {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* gap: 30px; */
+
+}
+#nav input{
+    display: none;
+}
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    line-height: 140%;
+    width: 100%;
+}
+
+#head p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    color: #2f2f2f;
+    max-width: 100%;
+    font-family: sans-serif;
+    /* line-height: 400%; */
+}
+.bgImg1{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg2{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg3{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg4{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg5{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg6{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#bottomBoxes{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    gap:40px; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#bgColorH{
+    width: 150%;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+
+}
+@media all and (min-width:86px) and (max-width: 450px){
+    #bgColor {
+    background-color: #F8F8F8;
+    /* height: 300px; */
+    /* width: 800%; */
+}
+    #boxes {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* gap: 30px; */
+
+}
+#nav input{
+    display: none;
+}
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    line-height: 140%;
+    width: 100%;
+}
+
+#head p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    color: #2f2f2f;
+    max-width: 100%;
+    font-family: sans-serif;
+    /* line-height: 400%; */
+}
+.bgImg1{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg2{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg3{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg4{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg5{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg6{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#bottomBoxes{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    gap:40px; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#bottomBoxes img{
+    width:100%;
+}
+#bgColorH{
+    width: 170%;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+#bottomBoxes h3{
+    color: #4b4b4b;
+    font-size: 23px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    /* text-align: center; */
+    margin-left: 30px;
+    line-height: 25px;
+}
+#bgColor {
+    background-color: #F8F8F8;
+    /* height: 300px; */
+    width: 170%;
+}
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    /* line-height: 140%; */
+    /* width: 100%; */
+}
+
+
+#head p {
+    /* text-align: center; */
+    font-weight: normal;
+    font-size: 19px;
+    color: #2f2f2f;
+    /* max-width: 100%; */
+    font-family: sans-serif;
+    /* line-height: 400%; */
+}
+
+
+}
