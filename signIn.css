@@ -1,0 +1,65 @@
+body{
+    background-color: #cfcfcf;
+}
+#logo{
+    width: 50%;
+    /* margin: auto; */
+    margin-top: 20px;
+    margin-left: 25%;
+}
+#signInBox{
+    background-color: #f7f7f7;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 350px;
+    padding: 20px;
+    /* height: 400px; */
+    margin: auto;
+    margin-top: 7%;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: block;
+    /* position: fixed; */
+}
+#singInForm{
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0%;
+}
+#singInForm>h5{
+    margin-bottom: 2%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: gray;
+}
+#singInForm>input{
+    height: 30px;
+    /* padding: 10px; */
+}
+#submitBtn{
+    margin-top: 3%;
+    background-color: #f37e5d;
+    border: none;
+    color: white;
+    font-size: 16px;
+
+}
+#submitBtn:hover{
+    cursor: pointer;
+    background-color: #eb5227e2;
+}
+#linksDiv{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 20px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    justify-content: space-between;
+}
+#linksDiv>a{
+    text-decoration: none;
+    color: gray;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

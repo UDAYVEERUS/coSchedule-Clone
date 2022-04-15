@@ -5,30 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
-    <style>
-        #forgotpassForm{
-            /* display: flex; */
-            /* border: 1px solid red; */
-            text-align: center;
-        }
-        #enteredEmail{
-            width: 30%;
-            padding: 13px;
-        }
-        #submitBtn{
-            padding: 12px;
-            width: 15%;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            color: white;
-            background-color: #f46037df;
-        }
-        #submitBtn:hover{
-            cursor: pointer;
-            background-color: #f46037;
-        }
-    </style>
+    <link rel="stylesheet" href="./forgotPass.css">
 </head>
 <body>
     <form id="forgotpassForm">
@@ -38,28 +15,7 @@
         <input type="submit" id="submitBtn">
     </form>
 
-    <script>
-        var signInDetails=JSON.parse(localStorage.getItem('signInDetails')) || [];
-
-        document.querySelector('form').addEventListener('submit',function(){
-            event.preventDefault();
-            var enteredEmail=document.querySelector('#enteredEmail').value;
-
-            var flag=false;
-            signInDetails.forEach(element => {
-                if(enteredEmail==element.email){
-                    flag=true;
-                    alert('Your Password is : '+" "+element.password);
-                    window.location.href='./signIn.html';
-                    document.querySelector('enteredEmail').value='';
-                }
-            });
-            if(!flag){
-                alert('Incorrect Email Address');
-            }
-
-        })
-    </script>
+    <script src="./forgotPass.js"></script>
 
 </body>
 </html>

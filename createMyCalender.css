@@ -1,0 +1,77 @@
+body{
+    display: block;
+    background-color: #f8f8f8;
+}
+*{
+    /* background-color: rgb(248, 248, 237); */
+    font-family: "MuseoSans-700",sans-serif; 
+    box-sizing: border-box;
+}
+
+#starting{
+    text-align: center;
+    
+}
+#starting>h1{
+    font-size:40px;
+}
+#starting>p{
+    font-size: 15px;
+    margin-top: -20px;
+}
+#calender{
+    
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    margin-top:50px;
+    background-color: #fff;;
+    border-radius: 10px;
+}
+.box{
+   width: 95%;
+   height: 13px;
+   font-size:medium;
+   /* /* marginauto; */
+   padding: 18px; 
+   margin-top:10px
+}
+#submitBtn{
+
+ /* display:flex; */
+ margin-left: 67%;
+ text-align: right;
+ padding: 15px;
+ background-color: orangered;
+ border: 0px solid white;
+ color: white;
+ border-radius: 5px;
+}
+#submitBtn:hover{
+   cursor: pointer;
+}
+@media all and (min-width:300px) and (max-width:650px){
+#calender{
+    width:90%;
+    height: auto;        
+}
+#para{
+    width: 90%;
+    height: auto;
+}
+#submitBtn{
+    width:30%;
+    margin-left:65%
+}                                                                                                                              
+}
+#para{
+   font-size: small;
+   text-align: center;
+   
+}

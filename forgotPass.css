@@ -1,0 +1,22 @@
+#forgotpassForm{
+    /* display: flex; */
+    /* border: 1px solid red; */
+    text-align: center;
+}
+#enteredEmail{
+    width: 30%;
+    padding: 13px;
+}
+#submitBtn{
+    padding: 12px;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #f46037df;
+}
+#submitBtn:hover{
+    cursor: pointer;
+    background-color: #f46037;
+}

@@ -1,0 +1,72 @@
+* {
+    font-family: "MuseoSans-700", sans-serif;
+}
+#display{
+    justify-content: center;
+    text-align: center;
+
+}
+
+img {
+    height: 70px;
+    width: 150px;
+    /* text-align: center;
+    justify-content: center; */
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#p {
+    font-size: 20px;
+}
+.p {
+    font-size: 13px;
+}
+
+.box {
+    /* margin: 10px; */
+    padding: 20px;
+    height: auto;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin-left: 28%; */
+    text-align: left;
+    font-size: 15px;
+    margin: auto;
+    margin-top: -50px;
+    font-size: 15px;
+}
+.inputbox{
+    width: 95%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.submit{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left:57%;
+    background-color: orangered;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    
+}
+#para{
+    margin-left:10px;
+    margin-right: 10px;
+
+}
+@media all and (min-width:250px) and (max-width:850px){
+    .box{
+        width: 60%;
+        height: auto;
+    }
+}
