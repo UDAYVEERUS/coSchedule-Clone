@@ -5,8 +5,369 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Press</title>
+    <link rel="stylesheet" href="./Press.css">
 </head>
 <body>
+
+<!-- NAVBAR PART START     -->
+<div id="navBar">
+    <div id="navBarLeftPart">
+      <a id="navLogo" href="./index.html"
+        ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+      /></a>
+      <div class="dropDown">
+        <button class="dropBtn">Products</button>
+        <div id="productsDropDown" class="dropDownContent">
+          <div id="leftPart">
+            <h5 id="leftPartHeading">CONTENT CALENDARS</h5>
+            <div class="dropDownDiv" onclick="MarketingCalendar()">
+              <img class="lpdImg" src="./0.png" alt="productsImg1" />
+              <div>
+                <h4>Marketing Calendar</h4>
+
+                <p class="leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="dropDownDiv" onclick="MarketingSuite()">
+              <img class="lpdImg" src="./1.png" alt="productsImg2" />
+              <div>
+                <h4>Marketing Suite</h4>
+
+                <p class="leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="rightPart">
+            <h5 class="rpHeading">CONTENT OPTIMIZATION</h5>
+            <div class="dropDownDiv" onclick="HeadlineStudio()">
+              <img class="rpdImg" src="./2.png" alt="productsImg3" />
+              <h4 class="rphead">Headline Studio</h4>
+            </div>
+            <h5 class="rpHeading">MARKETING EDUCATION</h5>
+            <div class="dropDownDiv" onclick="ActionableMarketingInstitute()">
+              <img class="rpdImg" src="./3.png" alt="productsImg4" />
+              <h4 class="rphead">Actionable Marketing Institute</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Why CoSchedule</button>
+        <div id="whyCoScheduleDropDown" class="dropDownContent">
+          <div onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p class="whyBoxPara">
+              See how CoSchedule customers have found success.
+            </p>
+          </div>
+          <div onclick="BuildYourCaseForCoSchedule()">
+            <h4>Build Your Case for CoSchedule</h4>
+            <p class="whyBoxPara">
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Resources</button>
+        <div id="resourcesDropDown" class="dropDownContent">
+          <div id="resourcesfirstdiv" class="resourceDropDiv">
+            <h5 style="padding-left: 13px">LEARN</h5>
+            <div onclick="CoScheduleBlog()">
+              <h4>CoSchedule Blog</h4>
+              <p>
+                Content to help marketers plan, organize, and meet their
+                goals.
+              </p>
+            </div>
+            <div onclick="CoScheduleGuide()">
+              <h4>CoSchedule Guide</h4>
+              <p>
+                How to organize all of your marketing with CoSchedule best
+                practices.
+              </p>
+            </div>
+            <div onclick="MarketingIdeasHub()">
+              <h4>Marketing Ideas Hub</h4>
+              <p>
+                A list of creative tactics to try out in your marketing
+                strategy.
+              </p>
+            </div>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">TOOLS</h5>
+            <p onclick="HeadlineAnalyzer()" class="clickablePara">
+              Headline Analyzer
+            </p>
+            <p onclick="SocialMessageOptimizer()" class="clickablePara">
+              Social Message Optimizer
+            </p>
+            <p onclick="EmailSubjectLineTester()" class="clickablePara">
+              Email Subject Line Tester
+            </p>
+            <h5 class="sideHeading">BOOKS</h5>
+            <p onclick="tenxMarketingFormula()" class="clickablePara">
+              10x Marketing Formula
+            </p>
+            <p onclick="GetStartedwithAgileMarketing()" class="clickablePara">
+              Get Started with Agile Marketing
+            </p>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">GUIDE</h5>
+            <p onclick="AgileMarketingGuide()" class="clickablePara">
+              Agile Marketing Guide
+            </p>
+            <p onclick="MarketingStrategyGuide()" class="clickablePara">
+              Marketing Strategy Guide
+            </p>
+            <p onclick="ContentMarketingGuide()" class="clickablePara">
+              Content Marketing Guide
+            </p>
+            <h5 class="sideHeading">PODCAST</h5>
+            <p onclick="ActionableMarketingPodcast()" class="clickablePara">
+              Actionable Marketing Podcast
+            </p>
+          </div>
+        </div>
+      </div>
+      <a id="pricing" class="dropBtn" href="./pricing.html">Pricing</a>
+    </div>
+    <div id="navBarRightPart">
+      <a class="navRightPartLinks" href="./signIn.html">Sign In</a>
+      <a class="navRightPartLinks" href="./GetADemo.html">Get A Demo</a>
+      <a
+        id="createMyCalendar"
+        class="navRightPartLinks"
+        href="./createMyCalender.html"
+        >Create My Calendar</a
+      >
+    </div>
+  </div>
+  <div id="navBar2">
+    <a id="navLogo" href="./index.html"
+      ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+    /></a>
+    <button id="divHr">
+      <hr class="hr" />
+      <hr class="hr" />
+      <hr class="hr" />
+      <div id="navBarContent">
+        <div id="navBarContentInnerDiv">
+          <h4 class="nav2Head">PRODUCTS</h4>
+
+          <div>
+            <div class="nav2ProductsDiv" onclick="MarketingCalendar()">
+              <img class="nav2Img1" src="./0.png" alt="productsImg1" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Calendar</h4>
+                <p class="nav2leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="nav2ProductsDiv" onclick="MarketingSuite()">
+              <img class="nav2Img1" src="./1.png" alt="productsImg2" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Suite</h4>
+                <p class="nav2leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv3"
+              class="nav2ProductsDiv"
+              onclick="HeadlineStudio()"
+            >
+              <img class="nav2Img2" src="./2.png" alt="productsImg3" />
+              <h4 id="nav2headline">Headline Studio</h4>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv4"
+              class="nav2ProductsDiv"
+              onclick="ActionableMarketingInstitute()"
+            >
+              <img class="nav2Img2" src="./3.png" alt="productsImg4" />
+              <h4>Actionable Marketing Institute</h4>
+            </div>
+          </div>
+          <h4 class="nav2Head">WHY COSCHEDULE</h4>
+          <div class="whyCoScheduleDiv" onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p>See how CoSchedule customers have found success.</p>
+          </div>
+          <div
+            class="whyCoScheduleDiv"
+            onclick="BuildYourCaseForCoSchedule()"
+          >
+            <h4>Build Your Case for CoSchedule</h4>
+            <p>
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+          <div id="nav2LinksDiv">
+            <a class="nav2Links" href="./pricing.html">Pricing</a>
+            <a
+              id="nav2createMyCalender"
+              class="nav2Links"
+              href="./createMyCalender.html"
+              >Create My Calendar</a
+            >
+            <a class="nav2Links" href="./signIn.html">Sign In</a>
+            <a class="nav2Links" href="./GetADemo.html">Get A Demo</a>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+  <!-- NAVBAR PART END -->
+
+    <h1 style="text-align: center;">Media & Press</h1>
+    <p style="text-align: center;">CoSchedule Company News, Awards, & Media Resources</p>
+
+    <div id="mediaUpperDiv">
+        <div>
+            <img src="https://media.coschedule.com/uploads/gartner-text-01-2.png" alt="">
+            <p>The Gartner Magic Quadrant™ for Content Marketing Platforms, 2020</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/Inc5000_LOGO_stacked_BLK-1.png" alt="">
+            <p>One Of The Fastest-Growing Marketing Platforms 3 Years In a Row</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/2022/04/forbes_advisor_best_project_management_software_of_2022_category_badge_2_line_white_outline.png" alt="">
+            <p>Named to the Best Project Management Software & Tools of 2022</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/2022/01/ContentCreation_HighPerformer_HighPerformer-1.png" alt="">
+            <p>CoSchedule Named G2 Crowd High Performer for 16th Consecutive Quarter</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/2021/11/CAP_Badge_Shortlist_2021_Full-Color-4.png" alt="">
+            <p>Named To Capterra's 2021 Shortlist for Social Media Analytics Tool</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/2021/12/SA_FrontRunners_2021_FullColor-768x600-1.png" alt="">
+            <p>Software Advice FrontRunner in Brand & Content Management Software</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/2022/03/GA_Badge_CategoryLeaders_2021_FullColor-300x233-1.png" alt="">
+            <p>Category Leader for Content Management System (CMS) Software</p>
+        </div>
+    </div>
+    <h1 style="text-align: center;">As Featured In</h1>
+    <div id="mediaLowerDiv">
+        <div>
+            <img src="https://media.coschedule.com/uploads/entrepreneur-logo-transparency.png" alt="">
+            <p>The Essential Recipe for a Successful Business Campaign</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/forbes.png" alt="">
+            <p>Why B2B Companies Need To Think About Content Marketing Beyond Lead Generation</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/Inc._magazine_logo.png" alt="">
+            <p>5 Ways to Boost Your ROI on Content Marketing</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/techweek_la15.png" alt="">
+            <p>CoSchedule is making digital marketing easier for everyone</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/2021/06/ha-logo-stacked-full-e1623097047837.png" alt="">
+            <p>Eliminate Wasted Effort with CoSchedule: An All-in-One Marketing Powerhouse Conveniently Hosted in the Cloud</p>
+        </div>
+        <div>
+            <img src="https://media.coschedule.com/uploads/entrepreneur-logo-transparency.png" alt="">
+            <p>Bringing Intelligence, Science and Automation Into the Marketing World</p>
+        </div>
+    </div>
+
+<!-- FOOTER PART START -->
+
+<footer>
     
+    <div id="footerGrid">
+      <div id="productsDiv">
+        <h4>PRODUCTS</h4>
+        <a href="./MarketingCalendar.html">Marketing Calendar</a>
+        <a href="./MarketingSuite.html">Marketing Suite</a>
+        <a href="./HeadlineStudio.html">Headline Studio</a>
+        <a href="./ActionableMarketingInstitute.html"
+          >Actionable Marketing Institute</a
+        >
+      </div>
+      <div id="whyCoScheduleDiv">
+        <h4>WHY COSCHEDULE</h4>
+        <a href="./CustomerStories.html">Customer Stories</a>
+        <a href="./Support.html">Support</a>
+        <a href="./ProductAnnouncements.html">Product Announcements</a>
+        <a href="./pricing.html">Pricing</a>
+      </div>
+      <div id="companyDiv">
+        <h4>COMPANY</h4>
+        <a href="./About.html">About</a>
+        <a href="./Jobs.html">Jobs</a>
+        <a href="./Press.html">Press</a>
+        <a href="./ContactUs.html">Contact Us</a>
+        <a href="./AffiliateProgram.html">Affiliate Program</a>
+        <a href="./Terms&Policies.html">Terms & Policies</a>
+      </div>
+      <div id="resourcesDiv">
+        <h4>RESOURCES</h4>
+        <a href="./CoScheduleBlog.html">CoSchedule Marketing Blog</a>
+        <a href="./ActionableMarketingPodcast.html"
+          >Actionable Marketing Podcast</a
+        >
+        <a href="./10xMarketingFormula.html">10x Marketing Formula Book</a>
+        <a href="./GetStartedwithAgileMarketing.html"
+          >Get Started With Agile Marketing Book</a
+        >
+        <a href="./MarketingIdeasHub.html">Marketing Ideas Hub</a>
+      </div>
+      <div id="guidesDiv">
+        <h4>GUIDES</h4>
+        <a href="./CoScheduleGuide.html">CoSchedule Guide</a>
+        <a href="./AgileMarketingGuide.html">Agile Marketing Guide</a>
+        <a href="./MarketingStrategyGuide.html">Marketing Strategy Guide</a>
+        <a href="./ContentMarketingGuide.html">Content Marketing Guide</a>
+      </div>
+      <div id="toolsDiv">
+        <h4>TOOLS</h4>
+        <a href="./HeadlineAnalyzer.html">Headline Analyzer</a>
+        <a href="./SocialMessageOptimizer.html">Social Message Optimizer</a>
+        <a href="./EmailSubjectLineTester.html">Email Subject Line Tester</a>
+        <a href="./MarketingDictionary.html">Marketing Dictionary</a>
+      </div>
+    </div>
+    <div id="footerBoxDown">
+        <a href="./index.html"
+          ><img width="220px" src="./coScheduleLogo.png" alt="coScheduleLogo"
+        /></a>
+        <a href="./createMyCalender.html">Sign Up</a>
+        <a href="./GetADemo.html">Request A Demo</a>
+        <a href="./signIn.html">Sign In</a>
+    </div>
+  </footer>
+ <p id="termsfoot">© Copyright 2022, all rights reserved. See our <a href="./Terms&Policies.html">Terms & Policies</a></p>
+  <!-- FOOTER PART END -->
+
+    <script src="./Press.js"></script>
 </body>
 </html>
