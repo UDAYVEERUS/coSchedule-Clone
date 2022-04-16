@@ -5,8 +5,707 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoSchedule Guide</title>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f8f8f8;
+}
+
+#bgColor {
+    /* display:flex; */
+    background-color: #F8F8F8;
+    margin: auto;
+    /* width: 150%; */
+    /* height: 300px; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
+
+
+
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    line-height: 140%;
+    width: 100%;
+}
+
+#head p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2f2f2f;
+    max-width: 100%;
+    font-family: sans-serif;
+    line-height: 400%;
+}
+
+#boxes {
+    display: grid;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 30px;
+
+}
+
+.shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 30PX;
+    /* border: 2px solid green ; */
+    margin-top: 30px;
+}
+
+#boxes img {
+    width: 185px;
+    height: 240px;
+
+}
+
+#boxes img:hover {
+   cursor: pointer;
+   zoom: 110%;
+
+}
+
+.bgImg1 {
+
+    background-image: url(https://media.coschedule.com/uploads/2021/09/Social-templates-cover-art-thumbnail-background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg2 {
+
+    background-image: url(https://media.coschedule.com/uploads/Jessica_Guide_CH1_blur-11.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg3 {
+
+    background-image: url(https://media.coschedule.com/uploads/full_mia-getting-started-cover_background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg4 {
+
+    background-image: url(https://media.coschedule.com/uploads/Emily-GS-Guide-Background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg5 {
+
+    background-image: url(https://media.coschedule.com/uploads/Getting-Started-Tier1_Full_Background.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg6 {
+
+    background-image: url(https://media.coschedule.com/uploads/2020/08/ReQueue-Guide-Cover-Blurred-1.png);
+
+    padding: 36px 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boxes h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #4b4b4b;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#boxes p {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #c1bdbd;
+    margin-top: 20px;
+    /* text-align: center; */
+}
+#bottomBoxes{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    gap:20px; 
+    grid-template-columns: repeat(3, 1fr);
+}
+#bottomBoxes div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 30px;
+}
+#bottomBoxes img{
+    width:100%;
+}
+#bottomBoxes h3{
+    color: #4b4b4b;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    /* text-align: center; */
+    margin-left: 30px;
+    line-height: 20px;
+}
+#bgColorH{
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+#bgColorH h1{
+    text-align: center;
+   margin-bottom: 30px;
+   font-family: sans-serif;
+
+}
+@media all and (min-width:451px) and (max-width: 800px){
+    #boxes {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* gap: 30px; */
+
+}
+
+.shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 30PX;
+    /* border: 2px solid green ; */
+    margin-top: 30px;
+}
+
+#bgColor {
+    /* display:flex; */
+    background-color: #F8F8F8;
+    margin: auto;
+    /* width: auto; */
+}
+
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    line-height: 140%;
+    width: 100%;
+}
+
+#head p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    color: #2f2f2f;
+    max-width: 100%;
+    font-family: sans-serif;
+    /* line-height: 400%; */
+}
+.bgImg1{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg2{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg3{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+
+}
+.bgImg4{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg5{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg6{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#bottomBoxes{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    gap:40px; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#bgColorH{
+    width: auto;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+
+}
+@media all and (min-width:86px) and (max-width: 450px){
+    #bgColor {
+    background-color: #F8F8F8;
+    /* height: 300px; */
+    /* width: 800%; */
+}
+    #boxes {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* gap: 30px; */
+
+}
+#nav input{
+    display: none;
+}
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    line-height: 140%;
+    width: 100%;
+}
+
+#head p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    color: #2f2f2f;
+    max-width: 100%;
+    font-family: sans-serif;
+    /* line-height: 400%; */
+}
+.bgImg1{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg2{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg3{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg4{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg5{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgImg6{
+    
+    padding: 36px 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#bottomBoxes{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    gap:40px; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#bottomBoxes img{
+    width:100%;
+}
+#bgColorH{
+    /* width: 170%; */
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+#bottomBoxes h3{
+    color: #4b4b4b;
+    font-size: 23px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    /* text-align: center; */
+    margin-left: 30px;
+    line-height: 25px;
+}
+#bgColor {
+    background-color: #F8F8F8;
+    /* height: 300px; */
+    /* width: 170%; */
+}
+#head h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-family: sans-serif;
+    /* line-height: 140%; */
+    /* width: 100%; */
+}
+
+
+#head p {
+    /* text-align: center; */
+    font-weight: normal;
+    font-size: 19px;
+    color: #2f2f2f;
+    /* max-width: 100%; */
+    font-family: sans-serif;
+    /* line-height: 400%; */
+}
+
+
+}
+
+/* footer styles start */
+#footerGrid {
+    /* border: 1px solid red; */
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 100px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #footerGrid > div {
+    padding: 20px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  #footerGrid > div > a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding: 3px;
+  }
+  #footerGrid > div > h4 {
+    margin-bottom: 3%;
+    padding-left: 3px;
+  }
+  #footerBox {
+    display: flex;
+  }
+  #footerBoxDown {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    text-align: left;
+    padding: 3px;
+    padding-top: 35px;
+  }
+  #footerBoxDown > a {
+    margin: auto;
+    padding: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #termsfoot{
+    /* margin: auto; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+  }
+  #termsfoot>a{
+    color: gray;
+  }
+
+  @media all and (min-width: 569px) and (max-width: 990px) {
+    #footerGrid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 75px;
+    }
+  }
+  @media all and (min-width: 0px) and (max-width: 569px) {
+    #footerGrid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 30px;
+    }
+  }
+/* footer styles end */
+
+    </style>
 </head>
 <body>
+    <div style="width: 100%;">
+        <div id="bgColor">
+            <!-- <div id="nav">
+            <div>
+                <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt=""><span> Guide</span>
+            </div>
+            <div>
+                <input type="text" name="" id="searc" placeholder="Search Guide..." <span class="log"> Log in</span>
+            </div>
+        </div> -->
+            <div style="margin-top: 2%;" id="head">
+                <h1>CoSchedule Guide</h1>
+                <p>Your one place to learn about how to organize all your marketing in CoSchedule</p>
+            </div>
+        </div>
+        <div id="boxes">
+            <div class="shadow">
+
+                <div class="bgImg1">
+                    <img src="https://media.coschedule.com/uploads/2021/09/Social-templates-cover-art-thumbnail-1.png"
+                        alt="">
+
+                </div>
+
+                <h1>Getting Started with Social Templates</h1>
+            </div>
+
+            <div class="shadow">
+                <div class="bgImg2">
+                    <img src="https://media.coschedule.com/uploads/Jessica_Guide_CH1-11-2.png" alt="">
+
+                </div>
+                <h1>Getting Started with Your CoShchedule Marketing calender</h1>
+                <!-- <p>MARKETING CALENDER</p> -->
+            </div>
+            <div class="shadow">
+                <div class="bgImg3">
+
+                    <img src="https://media.coschedule.com/uploads/full_mia-getting-started-cover.png" alt="">
+                </div>
+                <h1>Getting Started with CoSchedule for Power Users</h1>
+            </div>
+            <div class="shadow">
+                <div class="bgImg4">
+                    <img src="https://media.coschedule.com/uploads/Emily_GSG_Overall_Cover.png" alt="">
+
+                </div>
+                <h1>Getting Started with CoShedule for Marketing Team Members</h1>
+            </div>
+            <div class="shadow">
+                <div class="bgImg5">
+                    <img src="https://media.coschedule.com/uploads/Getting-Started-Tier1_Full.png" alt="">
+
+                </div>
+                <h1>Getting Started with CoShedule Bloggers and individulas</h1>
+                <!-- <p>GUIDE</p> -->
+            </div>
+            <div class="shadow">
+                <div class="bgImg6">
+                    <img src="https://media.coschedule.com/uploads/2020/08/ReQueue-Guide-Cover-thumbnail.png" alt="">
+
+                </div>
+                <h1>Getting Started with ReQueue</h1>
+            </div>
+
+        </div>
+        <div id="bgColorH">
+            <h1>Explore More Topics</h1>
+            <div id="bottomBoxes">
+
+                <div>
+                    <img src="https://media.coschedule.com/uploads/Sara-getting-started-guide_blog-graphics-06-1.png"
+                        alt="">
+                    <h3>Getting to Know Your CoSchedule Editorial Calendar for Bloggers and Solopreneurs</h3>
+                </div>
+                <div>
+                    <img src="https://media.coschedule.com/uploads/Sara-getting-started-guide_blog-graphics-12-3.png"
+                        alt="">
+                    <h3> The Wst Way To Manage Your Blog in CoShedule</h3>
+                </div>
+                <div>
+                    <img src="https://media.coschedule.com/uploads/Blog_Best-Way-to-Share-Timeline-01-2.png" alt="">
+                    <h3>The West Way to Share Project Timelines and Visibility With External Departments</h3>
+                </div>
+
+            </div>
+            <br>
+           
+            <br>
+            <br>
+        </div>
+    </div>
+
+<!-- FOOTER PART START -->
+
+<footer>
     
+    <div id="footerGrid">
+      <div id="productsDiv">
+        <h4>PRODUCTS</h4>
+        <a href="./MarketingCalendar.html">Marketing Calendar</a>
+        <a href="./MarketingSuite.html">Marketing Suite</a>
+        <a href="./HeadlineStudio.html">Headline Studio</a>
+        <a href="./ActionableMarketingInstitute.html"
+          >Actionable Marketing Institute</a
+        >
+      </div>
+      <div id="whyCoScheduleDiv">
+        <h4>WHY COSCHEDULE</h4>
+        <a href="./CustomerStories.html">Customer Stories</a>
+        <a href="./Support.html">Support</a>
+        <a href="./ProductAnnouncements.html">Product Announcements</a>
+        <a href="./pricing.html">Pricing</a>
+      </div>
+      <div id="companyDiv">
+        <h4>COMPANY</h4>
+        <a href="./About.html">About</a>
+        <a href="./Jobs.html">Jobs</a>
+        <a href="./Press.html">Press</a>
+        <a href="./ContactUs.html">Contact Us</a>
+        <a href="./AffiliateProgram.html">Affiliate Program</a>
+        <a href="./Terms&Policies.html">Terms & Policies</a>
+      </div>
+      <div id="resourcesDiv">
+        <h4>RESOURCES</h4>
+        <a href="./CoScheduleBlog.html">CoSchedule Marketing Blog</a>
+        <a href="./ActionableMarketingPodcast.html"
+          >Actionable Marketing Podcast</a
+        >
+        <a href="./10xMarketingFormula.html">10x Marketing Formula Book</a>
+        <a href="./GetStartedwithAgileMarketing.html"
+          >Get Started With Agile Marketing Book</a
+        >
+        <a href="./MarketingIdeasHub.html">Marketing Ideas Hub</a>
+      </div>
+      <div id="guidesDiv">
+        <h4>GUIDES</h4>
+        <a href="./CoScheduleGuide.html">CoSchedule Guide</a>
+        <a href="./AgileMarketingGuide.html">Agile Marketing Guide</a>
+        <a href="./MarketingStrategyGuide.html">Marketing Strategy Guide</a>
+        <a href="./ContentMarketingGuide.html">Content Marketing Guide</a>
+      </div>
+      <div id="toolsDiv">
+        <h4>TOOLS</h4>
+        <a href="./HeadlineAnalyzer.html">Headline Analyzer</a>
+        <a href="./SocialMessageOptimizer.html">Social Message Optimizer</a>
+        <a href="./EmailSubjectLineTester.html">Email Subject Line Tester</a>
+        <a href="./MarketingDictionary.html">Marketing Dictionary</a>
+      </div>
+    </div>
+    <div id="footerBoxDown">
+        <a href="./index.html"
+          ><img width="220px" src="./coScheduleLogo.png" alt="coScheduleLogo"
+        /></a>
+        <a href="./createMyCalender.html">Sign Up</a>
+        <a href="./GetADemo.html">Request A Demo</a>
+        <a href="./signIn.html">Sign In</a>
+    </div>
+  </footer>
+ <p id="termsfoot">© Copyright 2022, all rights reserved. See our <a href="./Terms&Policies.html">Terms & Policies</a></p>
+  <!-- FOOTER PART END -->
+
+  <script>
+      function MarketingCalendar() {
+    window.location.href = "MarketingCalendar.html";
+  }
+  function MarketingSuite() {
+    window.location.href = "MarketingSuite.html";
+  }
+  function HeadlineStudio() {
+    window.location.href = "HeadlineStudio.html";
+  }
+  function ActionableMarketingInstitute() {
+    window.location.href = "ActionableMarketingInstitute.html";
+  }
+  function CustomerStories() {
+    window.location.href = "CustomerStories.html";
+  }
+  function BuildYourCaseForCoSchedule() {
+    window.location.href = "BuildYourCaseForCoSchedule.html";
+  }
+  function CoScheduleBlog() {
+    window.location.href = "CoScheduleBlog.html";
+  }
+  function CoScheduleGuide() {
+    window.location.href = "CoScheduleGuide.html";
+  }
+  function MarketingIdeasHub() {
+    window.location.href = "MarketingIdeasHub.html";
+  }
+  function HeadlineAnalyzer() {
+    window.location.href = "HeadlineAnalyzer.html";
+  }
+  function SocialMessageOptimizer() {
+    window.location.href = "SocialMessageOptimizer.html";
+  }
+  function EmailSubjectLineTester() {
+    window.location.href = "EmailSubjectLineTester.html";
+  }
+  function tenxMarketingFormula() {
+    window.location.href = "10xMarketingFormula.html";
+  }
+  function GetStartedwithAgileMarketing() {
+    window.location.href = "GetStartedwithAgileMarketing.html";
+  }
+  function AgileMarketingGuide() {
+    window.location.href = "AgileMarketingGuide.html";
+  }
+  function MarketingStrategyGuide() {
+    window.location.href = "MarketingStrategyGuide.html";
+  }
+  function ContentMarketingGuide() {
+    window.location.href = "ContentMarketingGuide.html";
+  }
+  function ActionableMarketingPodcast() {
+    window.location.href = "ActionableMarketingPodcast.html";
+  }
+  </script>
 </body>
 </html>
