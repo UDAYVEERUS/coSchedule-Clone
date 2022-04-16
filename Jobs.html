@@ -5,8 +5,389 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobs</title>
+    <link rel="stylesheet" href="./jobs.css">
 </head>
 <body>
+
+<!-- NAVBAR PART START     -->
+<div id="navBar">
+    <div id="navBarLeftPart">
+      <a id="navLogo" href="./index.html"
+        ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+      /></a>
+      <div class="dropDown">
+        <button class="dropBtn">Products</button>
+        <div id="productsDropDown" class="dropDownContent">
+          <div id="leftPart">
+            <h5 id="leftPartHeading">CONTENT CALENDARS</h5>
+            <div class="dropDownDiv" onclick="MarketingCalendar()">
+              <img class="lpdImg" src="./0.png" alt="productsImg1" />
+              <div>
+                <h4>Marketing Calendar</h4>
+
+                <p class="leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="dropDownDiv" onclick="MarketingSuite()">
+              <img class="lpdImg" src="./1.png" alt="productsImg2" />
+              <div>
+                <h4>Marketing Suite</h4>
+
+                <p class="leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="rightPart">
+            <h5 class="rpHeading">CONTENT OPTIMIZATION</h5>
+            <div class="dropDownDiv" onclick="HeadlineStudio()">
+              <img class="rpdImg" src="./2.png" alt="productsImg3" />
+              <h4 class="rphead">Headline Studio</h4>
+            </div>
+            <h5 class="rpHeading">MARKETING EDUCATION</h5>
+            <div class="dropDownDiv" onclick="ActionableMarketingInstitute()">
+              <img class="rpdImg" src="./3.png" alt="productsImg4" />
+              <h4 class="rphead">Actionable Marketing Institute</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Why CoSchedule</button>
+        <div id="whyCoScheduleDropDown" class="dropDownContent">
+          <div onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p class="whyBoxPara">
+              See how CoSchedule customers have found success.
+            </p>
+          </div>
+          <div onclick="BuildYourCaseForCoSchedule()">
+            <h4>Build Your Case for CoSchedule</h4>
+            <p class="whyBoxPara">
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Resources</button>
+        <div id="resourcesDropDown" class="dropDownContent">
+          <div id="resourcesfirstdiv" class="resourceDropDiv">
+            <h5 style="padding-left: 13px">LEARN</h5>
+            <div onclick="CoScheduleBlog()">
+              <h4>CoSchedule Blog</h4>
+              <p>
+                Content to help marketers plan, organize, and meet their
+                goals.
+              </p>
+            </div>
+            <div onclick="CoScheduleGuide()">
+              <h4>CoSchedule Guide</h4>
+              <p>
+                How to organize all of your marketing with CoSchedule best
+                practices.
+              </p>
+            </div>
+            <div onclick="MarketingIdeasHub()">
+              <h4>Marketing Ideas Hub</h4>
+              <p>
+                A list of creative tactics to try out in your marketing
+                strategy.
+              </p>
+            </div>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">TOOLS</h5>
+            <p onclick="HeadlineAnalyzer()" class="clickablePara">
+              Headline Analyzer
+            </p>
+            <p onclick="SocialMessageOptimizer()" class="clickablePara">
+              Social Message Optimizer
+            </p>
+            <p onclick="EmailSubjectLineTester()" class="clickablePara">
+              Email Subject Line Tester
+            </p>
+            <h5 class="sideHeading">BOOKS</h5>
+            <p onclick="tenxMarketingFormula()" class="clickablePara">
+              10x Marketing Formula
+            </p>
+            <p onclick="GetStartedwithAgileMarketing()" class="clickablePara">
+              Get Started with Agile Marketing
+            </p>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">GUIDE</h5>
+            <p onclick="AgileMarketingGuide()" class="clickablePara">
+              Agile Marketing Guide
+            </p>
+            <p onclick="MarketingStrategyGuide()" class="clickablePara">
+              Marketing Strategy Guide
+            </p>
+            <p onclick="ContentMarketingGuide()" class="clickablePara">
+              Content Marketing Guide
+            </p>
+            <h5 class="sideHeading">PODCAST</h5>
+            <p onclick="ActionableMarketingPodcast()" class="clickablePara">
+              Actionable Marketing Podcast
+            </p>
+          </div>
+        </div>
+      </div>
+      <a id="pricing" class="dropBtn" href="./pricing.html">Pricing</a>
+    </div>
+    <div id="navBarRightPart">
+      <a class="navRightPartLinks" href="./signIn.html">Sign In</a>
+      <a class="navRightPartLinks" href="./GetADemo.html">Get A Demo</a>
+      <a
+        id="createMyCalendar"
+        class="navRightPartLinks"
+        href="./createMyCalender.html"
+        >Create My Calendar</a
+      >
+    </div>
+  </div>
+  <div id="navBar2">
+    <a id="navLogo" href="./index.html"
+      ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+    /></a>
+    <button id="divHr">
+      <hr class="hr" />
+      <hr class="hr" />
+      <hr class="hr" />
+      <div id="navBarContent">
+        <div id="navBarContentInnerDiv">
+          <h4 class="nav2Head">PRODUCTS</h4>
+
+          <div>
+            <div class="nav2ProductsDiv" onclick="MarketingCalendar()">
+              <img class="nav2Img1" src="./0.png" alt="productsImg1" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Calendar</h4>
+                <p class="nav2leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="nav2ProductsDiv" onclick="MarketingSuite()">
+              <img class="nav2Img1" src="./1.png" alt="productsImg2" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Suite</h4>
+                <p class="nav2leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv3"
+              class="nav2ProductsDiv"
+              onclick="HeadlineStudio()"
+            >
+              <img class="nav2Img2" src="./2.png" alt="productsImg3" />
+              <h4 id="nav2headline">Headline Studio</h4>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv4"
+              class="nav2ProductsDiv"
+              onclick="ActionableMarketingInstitute()"
+            >
+              <img class="nav2Img2" src="./3.png" alt="productsImg4" />
+              <h4>Actionable Marketing Institute</h4>
+            </div>
+          </div>
+          <h4 class="nav2Head">WHY COSCHEDULE</h4>
+          <div class="whyCoScheduleDiv" onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p>See how CoSchedule customers have found success.</p>
+          </div>
+          <div
+            class="whyCoScheduleDiv"
+            onclick="BuildYourCaseForCoSchedule()"
+          >
+            <h4>Build Your Case for CoSchedule</h4>
+            <p>
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+          <div id="nav2LinksDiv">
+            <a class="nav2Links" href="./pricing.html">Pricing</a>
+            <a
+              id="nav2createMyCalender"
+              class="nav2Links"
+              href="./createMyCalender.html"
+              >Create My Calendar</a
+            >
+            <a class="nav2Links" href="./signIn.html">Sign In</a>
+            <a class="nav2Links" href="./GetADemo.html">Get A Demo</a>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+  <!-- NAVBAR PART END -->
+
+    <h1 style="text-align: center;">Love what you do, do what you love.</h1>
+    <p style="text-align: center;">We believe passion in life bleeds into the work you do. And that each person brings an indispensable element to the CoSchedule team.</p>
+    <div id="loveDiv">
+        <h1>"I throw my whole heart into all of my GIFs."</h1>
+        <p>#OVERHEARDATCOSCHEDULE</p>
+    </div>
+    <div id="whoweare">
+        <div id="whoweareLeft">
+            <h1>Who We Are</h1>
+            <p>Hustle isn’t just a saying here. We work hard, fast, and at a level of excellence our competition only dreams of.</p>
+        </div>
+        <div id="whoweareRight">
+            <div>
+                <h1>We're passionate about our product.</h1>
+                <p>We love the product that we are building. This means that we always infuse it with the best we can offer relentlessly maintaining a high standard.</p>
+            </div>
+            <div>
+                <h1>We believe good design just works.</h1>
+                <p>Magical software looks just as good as it works. We demand of ourselves a simple user interface and backend code that 'just works.'</p>
+            </div>
+            <div>
+                <h1>We like people.</h1>
+                <p>Our customer service is personalized because our users are at the center of everything we do. We care about their success and their business. User –focused, –retention, –feedback.</p>
+            </div>
+            <div>
+                <h1>We never settle for good enough.</h1>
+                <p>Everything we do is focused on growth. Growing our product, improving our processes, and most importantly growing ourselves. We always learn and never settle for good enough.</p>
+            </div>
+            <div>
+                <h1>We get it done.</h1>
+                <p>We know that ideas don’t matter unless they become action. We always error on the side of shipping, failing fast, and getting better as we go along.</p>
+            </div>
+            <div>
+                <h1>We think big.</h1>
+                <p>Thinking small is a self-fulfilling prophecy. We challenge ourselves to constantly think bigger and want more. For ourselves, and the product that we are building.</p>
+            </div>
+        </div>
+    </div>
+    <div id="imageBox">
+		<img src="https://coschedule.com/img/about/cos-homecoming-2021.png" alt="CoSchedule Team">
+		<!-- <img src="https://coschedule.com/img/about/cos-chili-cookoff.png" alt="CoSchedule Chili Cookoff"> -->
+		<!-- <img src="https://coschedule.com/img/about/cos-team-day.png" alt="CoSchedule Team Day"> -->
+	</div>
+    <div id="details">
+        <div id="detailsleft">
+            <h1>The Details</h1>
+            <p>We’re building the best product on the market from the plains of North Dakota.</p>
+            <h2>Bismarck Office</h2>
+            <p>318 E Broadway Ave
+                Bismarck, ND 58501</p>
+            <h2>Fargo Office</h2>
+            <p>630 1st Ave N Ste. 8
+                Fargo, ND 58102</p>    
+        </div>
+        <div id="detailsright">
+            <h2>We've got you covered.</h2>
+            <p>✔ Fully-paid benefits package with vision, dental and medical</p>
+            <p>✔ Fully-paid life, short-term and long-term disability</p>
+            <p>✔ Health savings account + dependent care FSA</p>
+            <p>✔ 401(k) and company match</p>
+            <p>✔ Free parking</p>
+            <p>✔ Free coffee, tea, soda, water – all the hydration you need!</p>
+            <p>✔ No limits on sick or vacation days</p>
+            <p>✔ Yearly learning allowance</p>
+            <p>✔ Yearly health + wellness allowance</p>
+            <p>✔ Referral bonus</p>
+            <p>✔ Company-supplied MacBook Pro</p>
+            <p>✔ Casual Mondays, Tuesdays, Wednesdays, Thursdays, and Fridays</p>
+            <p>✔ We hold an annual Bratwurst Blowout that usually includes pellet guns and go carts</p>
+            <p>✔ Unpredictable appearance of breakfast pastries</p>
+            <p>✔ Free faxing! (For all your faxing needs)</p>
+        </div>
+    </div>
+
+    <div id="joinTeam">
+        <h1>Join the Team</h1>
+        <p>We're looking for smart, humble, and insanely talented individuals who love a challenge and get sh*t done.</p>
+        <div>
+            <a href="#">See Open Positions</a>
+        </div>
+    </div>
+
+<!-- FOOTER PART START -->
+
+<footer>
     
+    <div id="footerGrid">
+      <div id="productsDiv">
+        <h4>PRODUCTS</h4>
+        <a href="./MarketingCalendar.html">Marketing Calendar</a>
+        <a href="./MarketingSuite.html">Marketing Suite</a>
+        <a href="./HeadlineStudio.html">Headline Studio</a>
+        <a href="./ActionableMarketingInstitute.html"
+          >Actionable Marketing Institute</a
+        >
+      </div>
+      <div id="whyCoScheduleDiv">
+        <h4>WHY COSCHEDULE</h4>
+        <a href="./CustomerStories.html">Customer Stories</a>
+        <a href="./Support.html">Support</a>
+        <a href="./ProductAnnouncements.html">Product Announcements</a>
+        <a href="./pricing.html">Pricing</a>
+      </div>
+      <div id="companyDiv">
+        <h4>COMPANY</h4>
+        <a href="./About.html">About</a>
+        <a href="./Jobs.html">Jobs</a>
+        <a href="./Press.html">Press</a>
+        <a href="./ContactUs.html">Contact Us</a>
+        <a href="./AffiliateProgram.html">Affiliate Program</a>
+        <a href="./Terms&Policies.html">Terms & Policies</a>
+      </div>
+      <div id="resourcesDiv">
+        <h4>RESOURCES</h4>
+        <a href="./CoScheduleBlog.html">CoSchedule Marketing Blog</a>
+        <a href="./ActionableMarketingPodcast.html"
+          >Actionable Marketing Podcast</a
+        >
+        <a href="./10xMarketingFormula.html">10x Marketing Formula Book</a>
+        <a href="./GetStartedwithAgileMarketing.html"
+          >Get Started With Agile Marketing Book</a
+        >
+        <a href="./MarketingIdeasHub.html">Marketing Ideas Hub</a>
+      </div>
+      <div id="guidesDiv">
+        <h4>GUIDES</h4>
+        <a href="./CoScheduleGuide.html">CoSchedule Guide</a>
+        <a href="./AgileMarketingGuide.html">Agile Marketing Guide</a>
+        <a href="./MarketingStrategyGuide.html">Marketing Strategy Guide</a>
+        <a href="./ContentMarketingGuide.html">Content Marketing Guide</a>
+      </div>
+      <div id="toolsDiv">
+        <h4>TOOLS</h4>
+        <a href="./HeadlineAnalyzer.html">Headline Analyzer</a>
+        <a href="./SocialMessageOptimizer.html">Social Message Optimizer</a>
+        <a href="./EmailSubjectLineTester.html">Email Subject Line Tester</a>
+        <a href="./MarketingDictionary.html">Marketing Dictionary</a>
+      </div>
+    </div>
+    <div id="footerBoxDown">
+        <a href="./index.html"
+          ><img width="220px" src="./coScheduleLogo.png" alt="coScheduleLogo"
+        /></a>
+        <a href="./createMyCalender.html">Sign Up</a>
+        <a href="./GetADemo.html">Request A Demo</a>
+        <a href="./signIn.html">Sign In</a>
+    </div>
+  </footer>
+ <p id="termsfoot">© Copyright 2022, all rights reserved. See our <a href="./Terms&Policies.html">Terms & Policies</a></p>
+  <!-- FOOTER PART END -->
+
 </body>
 </html>
