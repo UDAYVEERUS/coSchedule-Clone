@@ -1,0 +1,138 @@
+ body{
+            background-color: #f8f8f8;
+        }
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        #platespoon{
+            background-color: #e9ab2b;
+            width: 100%;
+            height: auto;
+            padding-top: 3%;
+        }
+        #heading{
+            background-color: #e9ab2b;
+            margin-top: -10%;
+            padding-top: 4%;
+            padding-left: 32%;
+            padding-right: 35%;
+            text-align: center;
+            color: white;
+        }
+        #lower{
+            background-color: #e9ab2b;
+            color: white;
+            margin-top: -1.5%;
+            padding-top: 0.5%;
+            padding-left: 25%;
+            padding-right: 30%;
+            padding-bottom: 3%;
+        }
+        @media all and (min-width:100px) and (max-width:450px) {
+            
+        #platespoon{
+            background-color: #e9ab2b;
+            width: 100%;
+            height: auto;
+            padding-top: 3%;
+        }
+        
+        #heading{
+            background-color: #e9ab2b;
+            margin-top: -10%;
+            padding-top: 4%;
+            padding-left: 32%;
+            padding-right: 35%;
+        }
+        }
+
+        @media all and (min-width:450px) and (max-width:850px) {
+            
+        #platespoon{
+            background-color: #e9ab2b;
+            width: 100%;
+            height: auto;
+            padding-top: 3%;
+        }
+        
+        #heading{
+            background-color: #e9ab2b;
+            margin-top: -10%;
+            padding-top: 4%;
+            padding-left: 32%;
+            padding-right: 35%;
+        }
+        }
+
+        /* footer styles start */
+#footerGrid {
+    /* border: 1px solid red; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 100px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #footerGrid > div {
+    padding: 20px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  #footerGrid > div > a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding: 3px;
+  }
+  #footerGrid > div > h4 {
+    margin-bottom: 3%;
+    padding-left: 3px;
+  }
+  #footerBox {
+    display: flex;
+  }
+  #footerBoxDown {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    text-align: left;
+    padding: 3px;
+    padding-top: 35px;
+  }
+  #footerBoxDown > a {
+    margin: auto;
+    padding: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #termsfoot{
+    /* margin: auto; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+  }
+  #termsfoot>a{
+    color: gray;
+  }
+
+  @media all and (min-width: 569px) and (max-width: 990px) {
+    #footerGrid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 75px;
+    }
+  }
+  @media all and (min-width: 0px) and (max-width: 569px) {
+    #footerGrid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 30px;
+    }
+  }
+/* footer styles end */

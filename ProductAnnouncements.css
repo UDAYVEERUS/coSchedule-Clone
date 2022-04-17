@@ -1,0 +1,573 @@
+
+body{
+    background-color: #f8f8f8;
+}
+.announcement1{
+    width: 98%;
+    height:180px;
+    background-color: antiquewhite;
+    margin: auto;
+    text-align: center;
+    padding: 3%;
+    margin-top: 2%;
+}
+.announceh1{
+    text-align: center;
+    color: rgb(74, 65, 65);
+    font-size: 40px;
+}
+.announcement2{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.announcement2>div>.annouh1{
+    font-size: 50px;
+    color: rgb(126, 126, 216);
+}
+.annouh1{
+    margin-top: 100px;
+}
+.announcement2>div>.annouh2{
+    font-size: 50px;
+    margin-top: -40px;
+    color: rgb(133, 133, 224);
+}
+.getademo{
+    width: 20%;
+    height: 40px;
+    color: white;
+    background-color: rgb(174, 174, 240);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.getademo:hover{
+    background-color: rgb(111, 111, 218);
+    cursor:pointer;
+    
+}
+.readmore{
+    color: blue;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.enhancement{
+    width: 20%;
+    height: 40px;
+    color: white;
+    background-color: rgb(230, 123, 226);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.annouh2{
+    margin-bottom: -20px;
+}
+      /* NAVBAR PART START */
+      #navBar {
+        /* border: 1px solid red; */
+        width: 99%;
+        display: flex;
+        padding: 5px;
+        padding-left: 0%;
+        justify-content: space-between;
+        /* display: none; */
+      }
+      .dropBtn {
+        border: none;
+        background-color: #f8f8f8;
+        /* border: 1px solid greenyellow; */
+        font-size: 16px;
+        font-weight: bold;
+        margin: auto;
+        padding: 14px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #navBarLeftPart,
+      #navBarRightPart {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+      }
+      #navLogoImg {
+        height: 73px;
+        /* border: 1px solid red; */
+      }
+      .dropBtn:hover {
+        cursor: pointer;
+        color: #f37e5d;
+      }
+      .navRightPartLinks {
+        font-size: 16px;
+        font-weight: bold;
+        margin: auto;
+        color: black;
+        text-decoration: none;
+        /* border: 1px solid red; */
+        padding: 14px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #createMyCalendar {
+        background-color: #f37e5d;
+        color: white;
+        border-radius: 5px;
+      }
+      #createMyCalendar:hover {
+        background-color: #eb5227e2;
+      }
+      .navRightPartLinks:hover {
+        color: #f37e5d;
+      }
+      #pricing {
+        text-decoration: none;
+        color: black;
+      }
+      #pricing:hover {
+        color: #f37e5d;
+      }
+      .dropDown {
+        margin: auto;
+      }
+      .dropDownContent {
+        /* border: 1px solid rebeccapurple; */
+        display: none;
+        position: absolute;
+        /* z-index: auto; */
+      }
+      .dropDown:hover .dropDownContent {
+        display: block;
+        /* border: 1px solid red; */
+        /* margin-top: 2%; */
+        padding: 10px;
+      }
+      .dropDown:hover #productsDropDown {
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        justify-content: space-between;
+      }
+      .dropDown:hover #leftPart > div,
+      #rightPart > div {
+        display: flex;
+        /* border: 1px solid black; */
+      }
+      .lpdImg {
+        margin: auto;
+        margin-top: 6%;
+        margin-left: 1%;
+        margin-right: 5%;
+        width: 35px;
+        height: 35px;
+      }
+      .rpdImg {
+        margin: auto;
+        /* margin-top: 6%; */
+        margin-left: 1%;
+        margin-right: 3%;
+        width: 25px;
+        height: 25px;
+      }
+      #productsDropDown {
+        right: auto;
+        width: 700px;
+        left: 60px;
+        padding-left: 30px;
+        border-radius: 5px;
+        background-color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        /* padding: 30px 20px; */
+      }
+      #leftPart {
+        border-right: 1px solid #e9e9e9;
+        padding-right: 20px;
+        width: 59%;
+      }
+      .leftPara {
+        margin-top: -4%;
+        /* border: 1px solid red; */
+      }
+      #leftPartHeading {
+        margin-left: 3%;
+        color: gray;
+        font-weight: bold;
+      }
+      #rightPart {
+        /* margin-left: -5%; */
+        /* border: 1px solid red; */
+        padding: 2%;
+      }
+      .rpHeading {
+        color: gray;
+      }
+      .dropDownDiv {
+        /* border: 1px solid red; */
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 10px;
+      }
+      .dropDownDiv:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+      }
+      #whyCoScheduleDropDown {
+        /* border: 1px solid red; */
+        width: 300px;
+        background-color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+      }
+      .whyBoxPara {
+        margin-top: -6%;
+      }
+      #whyCoScheduleDropDown > div {
+        padding: 20px;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        border-radius: 10px;
+      }
+      #whyCoScheduleDropDown > div:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+      }
+      .dropDown:hover #resourcesDropDown {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        padding: 35px;
+        padding-top: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .resourceDropDiv {
+        /* border: 1px solid black; */
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      #resourcesDropDown {
+        right: auto;
+        width: 860px;
+        left: 35px;
+        /* padding-left: 30px; */
+        border-radius: 5px;
+        background-color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #resourcesfirstdiv {
+        width: 35%;
+        border-right: 1px solid #e9e9e9;
+        /* padding-top: 10px; */
+        /* border: 1px solid red; */
+      }
+      #resourcesfirstdiv > div > p {
+        margin-top: -5%;
+      }
+      .resourceDropDiv > div:hover {
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+      }
+      #resourcesDropDown > div > div {
+        /* border: 1px solid black; */
+        color: gray;
+        /* padding: 1px; */
+        padding-left: 15px;
+        margin-right: 7px;
+        /* margin-top: -5%; */
+      }
+      #resourcesDropDown > div > div > h4 {
+        color: black;
+      }
+      #resourcesfirstdiv > div {
+        /* border: 1px solid red; */
+        padding: 1px;
+      }
+      .resourceDropDiv > h5 {
+        /* border: 1px solid red; */
+        margin-bottom: 5px;
+      }
+      .clickablePara {
+        padding: 7px;
+        color: gray;
+        border-radius: 10px;
+      }
+      .clickablePara:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+        cursor: pointer;
+      }
+      .sideHeading {
+        padding-left: 7px;
+      }
+      #navBar2 {
+        display: none;
+        width: 100%;
+        border-radius: 10px;
+        /* border: 1px solid red; */
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      .hr {
+        border: none;
+        background-color: gray;
+        height: 3px;
+        width: 20px;
+      }
+      #divHr {
+        /* border: 1px solid red; */
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 15px;
+      }
+      #divHr:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+      #navBarContent {
+        display: none;
+        position: absolute;
+        /* border: 1px solid red; */
+        width: 90%;
+        /* height: 200px; */
+        left: 2%;
+        right: 20px;
+        /* margin-top: 10px; */
+      }
+      #divHr:hover #navBarContent {
+        display: block;
+        padding: 20px;
+        /* padding-top: 5px; */
+        cursor: default;
+      }
+      #navBarContentInnerDiv {
+        /* border: 1px solid black; */
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        height: 400px;
+        overflow: scroll;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .nav2ProductsDiv {
+        /* border: 1px solid red; */
+        display: flex;
+        margin: auto;
+        width: 50%;
+        text-align: left;
+        border-radius: 10px;
+        /* justify-content: space-around; */
+        padding: 15px;
+        padding-bottom: 0px;
+      }
+      .nav2Img1 {
+        width: 35px;
+        height: 35px;
+        /* margin-top: 5px; */
+        /* margin: auto; */
+      }
+      .nav2Img2 {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+        /* border: 1px solid red; */
+      }
+      .nav2ProductsDivDiv {
+        /* border: 1px solid black; */
+        padding: 5px;
+        padding-left: 10px;
+        padding-top: 0px;
+      }
+      .nav2ProductsDivDiv > h4 {
+        margin-top: 0%;
+      }
+      .nav2ProductsDiv:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+      }
+      .nav2ProductsDiv > h4 {
+        /* text-align: left; */
+        /* margin: auto; */
+        /* border: 1px solid red; */
+        margin-left: 5px;
+      }
+      #nav2ProductsDiv3,
+      #nav2ProductsDiv4 {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        /* border: 1px solid red; */
+      }
+      .nav2leftPara {
+        margin-top: -13px;
+        color: gray;
+      }
+      .whyCoScheduleDiv {
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 10px;
+      }
+      .whyCoScheduleDiv > p {
+        margin-top: -13px;
+        color: gray;
+      }
+      .whyCoScheduleDiv:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px;
+      }
+      
+      #nav2LinksDiv {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        margin: auto;
+        /* border: 1px solid black; */
+      }
+      .nav2Links {
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 15px;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        /* border: 1px solid red; */
+      }
+      .nav2Links:hover {
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 1px 0px; */
+        color: #f37e5d;
+      }
+      #nav2createMyCalender {
+        background-color: #f37e5d;
+        color: white;
+      }
+      #nav2createMyCalender:hover {
+        background-color: #eb5227e2;
+      }
+      .nav2Head {
+        color: #f37e5d;
+      }
+
+      @media all and (min-width: 569px) and (max-width: 990px) {
+        #navBar {
+          display: none;
+        }
+        #navBar2 {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      @media all and (min-width: 0px) and (max-width: 569px) {
+        #navBar {
+          display: none;
+        }
+        #navBar2 {
+          display: flex;
+          justify-content: space-between;
+        }
+        .nav2ProductsDiv {
+          width: 70%;
+        }
+        #nav2LinksDiv {
+          width: 50%;
+        }
+        .whyCoScheduleDiv {
+          width: 70%;
+        }
+      }
+       /* NAVBAR PART END */
+/* footer styles start */
+#footerGrid {
+    /* border: 1px solid red; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 100px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #footerGrid > div {
+    padding: 20px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  #footerGrid > div > a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding: 3px;
+  }
+  #footerGrid > div > h4 {
+    margin-bottom: 3%;
+    padding-left: 3px;
+  }
+  #footerBox {
+    display: flex;
+  }
+  #footerBoxDown {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    text-align: left;
+    padding: 3px;
+    padding-top: 35px;
+  }
+  #footerBoxDown > a {
+    margin: auto;
+    padding: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #termsfoot{
+    /* margin: auto; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+  }
+  #termsfoot>a{
+    color: gray;
+  }
+
+  @media all and (min-width: 569px) and (max-width: 990px) {
+    #footerGrid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 75px;
+    }
+  }
+  @media all and (min-width: 0px) and (max-width: 569px) {
+    #footerGrid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 30px;
+    }
+  }
+/* footer styles end */

@@ -5,8 +5,467 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agile Marketing Guide</title>
+    <link rel="stylesheet" href="./AgileMarketingGuide.css">
 </head>
 <body>
+    <!-- NAVBAR PART START     -->
+<div id="navBar">
+    <div id="navBarLeftPart">
+      <a id="navLogo" href="./index.html"
+        ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+      /></a>
+      <div class="dropDown">
+        <button class="dropBtn">Products</button>
+        <div id="productsDropDown" class="dropDownContent">
+          <div id="leftPart">
+            <h5 id="leftPartHeading">CONTENT CALENDARS</h5>
+            <div class="dropDownDiv" onclick="MarketingCalendar()">
+              <img class="lpdImg" src="./0.png" alt="productsImg1" />
+              <div>
+                <h4>Marketing Calendar</h4>
+
+                <p class="leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="dropDownDiv" onclick="MarketingSuite()">
+              <img class="lpdImg" src="./1.png" alt="productsImg2" />
+              <div>
+                <h4>Marketing Suite</h4>
+
+                <p class="leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="rightPart">
+            <h5 class="rpHeading">CONTENT OPTIMIZATION</h5>
+            <div class="dropDownDiv" onclick="HeadlineStudio()">
+              <img class="rpdImg" src="./2.png" alt="productsImg3" />
+              <h4 class="rphead">Headline Studio</h4>
+            </div>
+            <h5 class="rpHeading">MARKETING EDUCATION</h5>
+            <div class="dropDownDiv" onclick="ActionableMarketingInstitute()">
+              <img class="rpdImg" src="./3.png" alt="productsImg4" />
+              <h4 class="rphead">Actionable Marketing Institute</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Why CoSchedule</button>
+        <div id="whyCoScheduleDropDown" class="dropDownContent">
+          <div onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p class="whyBoxPara">
+              See how CoSchedule customers have found success.
+            </p>
+          </div>
+          <div onclick="BuildYourCaseForCoSchedule()">
+            <h4>Build Your Case for CoSchedule</h4>
+            <p class="whyBoxPara">
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Resources</button>
+        <div id="resourcesDropDown" class="dropDownContent">
+          <div id="resourcesfirstdiv" class="resourceDropDiv">
+            <h5 style="padding-left: 13px">LEARN</h5>
+            <div onclick="CoScheduleBlog()">
+              <h4>CoSchedule Blog</h4>
+              <p>
+                Content to help marketers plan, organize, and meet their
+                goals.
+              </p>
+            </div>
+            <div onclick="CoScheduleGuide()">
+              <h4>CoSchedule Guide</h4>
+              <p>
+                How to organize all of your marketing with CoSchedule best
+                practices.
+              </p>
+            </div>
+            <div onclick="MarketingIdeasHub()">
+              <h4>Marketing Ideas Hub</h4>
+              <p>
+                A list of creative tactics to try out in your marketing
+                strategy.
+              </p>
+            </div>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">TOOLS</h5>
+            <p onclick="HeadlineAnalyzer()" class="clickablePara">
+              Headline Analyzer
+            </p>
+            <p onclick="SocialMessageOptimizer()" class="clickablePara">
+              Social Message Optimizer
+            </p>
+            <p onclick="EmailSubjectLineTester()" class="clickablePara">
+              Email Subject Line Tester
+            </p>
+            <h5 class="sideHeading">BOOKS</h5>
+            <p onclick="tenxMarketingFormula()" class="clickablePara">
+              10x Marketing Formula
+            </p>
+            <p onclick="GetStartedwithAgileMarketing()" class="clickablePara">
+              Get Started with Agile Marketing
+            </p>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">GUIDE</h5>
+            <p onclick="AgileMarketingGuide()" class="clickablePara">
+              Agile Marketing Guide
+            </p>
+            <p onclick="MarketingStrategyGuide()" class="clickablePara">
+              Marketing Strategy Guide
+            </p>
+            <p onclick="ContentMarketingGuide()" class="clickablePara">
+              Content Marketing Guide
+            </p>
+            <h5 class="sideHeading">PODCAST</h5>
+            <p onclick="ActionableMarketingPodcast()" class="clickablePara">
+              Actionable Marketing Podcast
+            </p>
+          </div>
+        </div>
+      </div>
+      <a id="pricing" class="dropBtn" href="./pricing.html">Pricing</a>
+    </div>
+    <div id="navBarRightPart">
+      <a class="navRightPartLinks" href="./signIn.html">Sign In</a>
+      <a class="navRightPartLinks" href="./GetADemo.html">Get A Demo</a>
+      <a
+        id="createMyCalendar"
+        class="navRightPartLinks"
+        href="./createMyCalender.html"
+        >Create My Calendar</a
+      >
+    </div>
+  </div>
+  <div id="navBar2">
+    <a id="navLogo" href="./index.html"
+      ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+    /></a>
+    <button id="divHr">
+      <hr class="hr" />
+      <hr class="hr" />
+      <hr class="hr" />
+      <div id="navBarContent">
+        <div id="navBarContentInnerDiv">
+          <h4 class="nav2Head">PRODUCTS</h4>
+
+          <div>
+            <div class="nav2ProductsDiv" onclick="MarketingCalendar()">
+              <img class="nav2Img1" src="./0.png" alt="productsImg1" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Calendar</h4>
+                <p class="nav2leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="nav2ProductsDiv" onclick="MarketingSuite()">
+              <img class="nav2Img1" src="./1.png" alt="productsImg2" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Suite</h4>
+                <p class="nav2leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv3"
+              class="nav2ProductsDiv"
+              onclick="HeadlineStudio()"
+            >
+              <img class="nav2Img2" src="./2.png" alt="productsImg3" />
+              <h4 id="nav2headline">Headline Studio</h4>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv4"
+              class="nav2ProductsDiv"
+              onclick="ActionableMarketingInstitute()"
+            >
+              <img class="nav2Img2" src="./3.png" alt="productsImg4" />
+              <h4>Actionable Marketing Institute</h4>
+            </div>
+          </div>
+          <h4 class="nav2Head">WHY COSCHEDULE</h4>
+          <div class="whyCoScheduleDiv" onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p>See how CoSchedule customers have found success.</p>
+          </div>
+          <div
+            class="whyCoScheduleDiv"
+            onclick="BuildYourCaseForCoSchedule()"
+          >
+            <h4>Build Your Case for CoSchedule</h4>
+            <p>
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+          <div id="nav2LinksDiv">
+            <a class="nav2Links" href="./pricing.html">Pricing</a>
+            <a
+              id="nav2createMyCalender"
+              class="nav2Links"
+              href="./createMyCalender.html"
+              >Create My Calendar</a
+            >
+            <a class="nav2Links" href="./signIn.html">Sign In</a>
+            <a class="nav2Links" href="./GetADemo.html">Get A Demo</a>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+  <!-- NAVBAR PART END -->
+    <div id="bgColor">
+        <div>
+            <img src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2Fagile-guide-home-graphic.png&w=1920&q=75"
+                alt="">
+            <P>AGILE MARKETING GUIDE </P>
+            <h2>How to Get Started With Agile Marketing and Do Your Best Work</h2>
+        </div>
+    </div>
+    <div class="pHead">
+        <p>Agile Marketing Guide</p>
+    </div>
+    <hr>
+    <div>
+        <div id="contentBox">
+            <div id="chapters">
+                <div id="chapterHeading1">
+                    <h4>CHAPTER 1</h4>
+                    <P>How to Get Started With Agile Marketing and Do Your Best Work</P>
+                </div>
+
+                <div class="chapterHeading">
+                    <h4>CHAPTER 2</h4>
+                    <P>What is the Agile Scrum Framework and How Does It Work For Marketers?</P>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 3</h4>
+                    <P>How to Organize Cross Functional Marketing Teams</P>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 4</h4>
+                    <P>How To Use Agile Sprint Planning To Implement Efficient Marketing Processes</P>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 5</h4>
+                    <P>How to Run Effective Daily Standup Meetings With Busy Marketers</P>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 6</h4>
+                    <P>How to Implement Agile Marketing Workflows With Examples</P>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 7 </h4>
+                    <P>How to Improve Marketing Processes With Agile Sprint Retrospectives</P>
+                </div>
+            </div>
+            <div id="paras">
+                <div>
+                    <div id="parasHeadingDate">
+
+                        <p>Published January 31, 2019/ Updated January 31, 2022</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>The worlds of business and marketing are changing. New technologies are empowering companies
+                            to respond to customer demands more quickly and with better data-driven insights than ever
+                            before. Those can adapt and execute with speed and precision will enjoy the benefits, while
+                            those trapped in an old-school business-as-usual mindset risk becoming irrelevant.</p>
+
+                    </div>
+                    <br>
+                    <div class="parasHeading">
+
+                        <p>This means marketers must move with the flow of progress too. How can managers make sure
+                            their teams are able to keep pace with their competition while remaining flexible enough to
+                            adjust to an unpredictable future rather than simply guessing at what might come next?</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>he answer lies with <b> agile marketing </b></p>
+
+                    </div>
+                    <div class="parasHeading">
+                        <p>With an approach to planning, executing, and measuring projects and campaigns that’s based
+                            around rapid iteration and data-backed decision-making, marketing departments within
+                            organizations of all sizes can work better, faster, and at less cost.</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>The results speak for themselves: within a five-year span, agile workflows have helped <a
+                                href="index.html">CoSchedule</a> grow into an industry-leading marketing SaaS company
+                            (offering a world-class software suite that helps marketers get organized), <span
+                                style="color: #f51515;">landing at number 153 on the Inc. 500 list in 2018</span> and
+                            earning a spot on Gartner’s Magic Quadrant for Content Marketing Platforms.</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>Implementing such processes isn’t without its challenges. Fortunately though, any company can
+                            get started and reap the rewards, transforming even the most stuck-in-the-past teams from
+                            cumbersome cost-centers into lean revenue-generating machines. And that is exactly what
+                            you’ll learn how to achieve by reading this in-depth guide on going agile today.
+
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="contentBox2">
+
+
+
+
+            <div id="imgBox">
+                <img src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2Fagile-marketing-guide-book3.png&w=1920&q=75"
+                    alt="">
+                <h2>Prefer paperback? Buy this book on Amazon</h2>
+                <p class="imagBoxMidP">Available in print and digital editions.</p>
+                <div>
+
+                    <button><a href="#">Get It Now</a></button>
+
+                    <p class="pdf">or download the pdf </p>
+                </div>
+            </div>
+
+
+
+            <div id="chapterList">
+                <h2>Chapter List</h2>
+                <ol class="ordredLists">
+                    <li class="firstList">How to Get Started With Agile Marketing and Do Your Best Work (Current
+                        Chapter)</li>
+                    <li>What is the Agile Scrum Framework and How Does It Work For Marketers?</li>
+                    <li>How to Organize Cross Functional Marketing Teams</li>
+                    <li>How to Implement a Simple Agile Sprint Planning Process For Marketers</li>
+                    <li>How to Run Effective Daily Standup Meetings With Busy Marketers</li>
+                    <li>How to Implement Agile Marketing Workflows With Examples</li>
+                    <li>How to Improve Marketing Processes With Agile Sprint Retrospectives</li>
+                </ol>
+                <div class="ptag">
+                <h2>Why Create This Guide?</h2>
+                <p>Marketing teams often struggle to meet deadlines and achieve their goals because of inefficient processes and a lack of proper tools to support better ways of working.
+
+            </p>
+               <p> Implementing agile principles and workflows, however, can go a long way toward solving these problems for marketing departments across all kinds of verticals. It’s no exaggeration nor hollow marketing claim to state that it has been immensely impactful upon CoSchedule’s growth.</p>
+            </div>
+            <div>
+                <h2>What Can You Expect to Find Here?</h2>
+                <p>There are numerous ways to apply agile to marketing. Like so many other things in this industry, there are also different philosophies and opinions on the best way it should be approached.</p>
+                <p>With that said, this guide is not necessarily the end-all, be-all authority on the subject. It’s such a broad topic with so many varying approaches that one resource covering every aspect of agile inside and out would be an intimidating challenge (both to create and to read).</p>
+                <p>Instead, it breaks down the basics of what you need to know, and explains how to actually implement it with easy-to-follow step-by-step instruction. It’s all informed by what has worked for the marketing team at CoSchedule too, blending our own approach with some by-the-book explanation. There’s some (strategic and thoughtful) repetition of information too, so if you don’t quite catch something the first time, you’ll often have an opportunity to hear it again later.</p>
+                <p>Rather than diving deep into minutiae that may not make sense to newcomers, we thought this approach would be more useful. What matters most above all is that you’re able to put better processes into place so your team can work more efficiently and effectively to get better results in less time. And that’s exactly what we hope you’ll gain as a result of reading this guide.</p>
+                <div>
+
+                    <h2>Download: Get This Guide in One Full PDF</h2>
+                    <p>If you would prefer to read this guide in PDF, you can. Download the complete guide in one easy-to-read format below (plus, find additional templates you’ll use in subsequent chapters):</p>
+                    <img src="https://media.coschedule.com/uploads/agile_marketing_guide_CTA-01-1.png" alt="">
+                </div>
+                <div>
+                    <h2>So, What Exactly is Agile Marketing?</h2>
+                    <p>It’s a project management framework that borrows the principles of agile software development (which enables teams to hit ship dates under budget more consistently) and applies it to a marketing context. It achieves this by streamlining team structure, communication, processes, and workflows to maximize efficiency without sacrificing quality.</p>
+                    <p>This results in doing better work more quickly with fewer missed deadlines. It also allows teams to respond to changes in the market and adjust tactics according to what works much more rapidly than the typical annual “big campaign” advertising model.</p>
+                    <img src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2Fwhat-is-agile-marketing.png&w=1920&q=75" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+
+<!-- FOOTER PART START -->
+
+<footer>
     
+    <div id="footerGrid">
+      <div id="productsDiv">
+        <h4>PRODUCTS</h4>
+        <a href="./MarketingCalendar.html">Marketing Calendar</a>
+        <a href="./MarketingSuite.html">Marketing Suite</a>
+        <a href="./HeadlineStudio.html">Headline Studio</a>
+        <a href="./ActionableMarketingInstitute.html"
+          >Actionable Marketing Institute</a
+        >
+      </div>
+      <div id="whyCoScheduleDiv">
+        <h4>WHY COSCHEDULE</h4>
+        <a href="./CustomerStories.html">Customer Stories</a>
+        <a href="./Support.html">Support</a>
+        <a href="./ProductAnnouncements.html">Product Announcements</a>
+        <a href="./pricing.html">Pricing</a>
+      </div>
+      <div id="companyDiv">
+        <h4>COMPANY</h4>
+        <a href="./About.html">About</a>
+        <a href="./Jobs.html">Jobs</a>
+        <a href="./Press.html">Press</a>
+        <a href="./ContactUs.html">Contact Us</a>
+        <a href="./AffiliateProgram.html">Affiliate Program</a>
+        <a href="./Terms&Policies.html">Terms & Policies</a>
+      </div>
+      <div id="resourcesDiv">
+        <h4>RESOURCES</h4>
+        <a href="./CoScheduleBlog.html">CoSchedule Marketing Blog</a>
+        <a href="./ActionableMarketingPodcast.html"
+          >Actionable Marketing Podcast</a
+        >
+        <a href="./10xMarketingFormula.html">10x Marketing Formula Book</a>
+        <a href="./GetStartedwithAgileMarketing.html"
+          >Get Started With Agile Marketing Book</a
+        >
+        <a href="./MarketingIdeasHub.html">Marketing Ideas Hub</a>
+      </div>
+      <div id="guidesDiv">
+        <h4>GUIDES</h4>
+        <a href="./CoScheduleGuide.html">CoSchedule Guide</a>
+        <a href="./AgileMarketingGuide.html">Agile Marketing Guide</a>
+        <a href="./MarketingStrategyGuide.html">Marketing Strategy Guide</a>
+        <a href="./ContentMarketingGuide.html">Content Marketing Guide</a>
+      </div>
+      <div id="toolsDiv">
+        <h4>TOOLS</h4>
+        <a href="./HeadlineAnalyzer.html">Headline Analyzer</a>
+        <a href="./SocialMessageOptimizer.html">Social Message Optimizer</a>
+        <a href="./EmailSubjectLineTester.html">Email Subject Line Tester</a>
+        <a href="./MarketingDictionary.html">Marketing Dictionary</a>
+      </div>
+    </div>
+    <div id="footerBoxDown">
+        <a href="./index.html"
+          ><img width="220px" src="./coScheduleLogo.png" alt="coScheduleLogo"
+        /></a>
+        <a href="./createMyCalender.html">Sign Up</a>
+        <a href="./GetADemo.html">Request A Demo</a>
+        <a href="./signIn.html">Sign In</a>
+    </div>
+  </footer>
+ <p id="termsfoot">© Copyright 2022, all rights reserved. See our <a href="./Terms&Policies.html">Terms & Policies</a></p>
+  <!-- FOOTER PART END -->
+
+  <script src="./AgileMarketingGuide.js"></script>
 </body>
 </html>

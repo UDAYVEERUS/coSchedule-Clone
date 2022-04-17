@@ -5,8 +5,408 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Strategy Guide</title>
+    <link rel="stylesheet" href="./MarketingStrategyGuide.css">
 </head>
 <body>
+    <!-- NAVBAR PART START     -->
+<div id="navBar">
+    <div id="navBarLeftPart">
+      <a id="navLogo" href="./index.html"
+        ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+      /></a>
+      <div class="dropDown">
+        <button class="dropBtn">Products</button>
+        <div id="productsDropDown" class="dropDownContent">
+          <div id="leftPart">
+            <h5 id="leftPartHeading">CONTENT CALENDARS</h5>
+            <div class="dropDownDiv" onclick="MarketingCalendar()">
+              <img class="lpdImg" src="./0.png" alt="productsImg1" />
+              <div>
+                <h4>Marketing Calendar</h4>
+
+                <p class="leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="dropDownDiv" onclick="MarketingSuite()">
+              <img class="lpdImg" src="./1.png" alt="productsImg2" />
+              <div>
+                <h4>Marketing Suite</h4>
+
+                <p class="leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="rightPart">
+            <h5 class="rpHeading">CONTENT OPTIMIZATION</h5>
+            <div class="dropDownDiv" onclick="HeadlineStudio()">
+              <img class="rpdImg" src="./2.png" alt="productsImg3" />
+              <h4 class="rphead">Headline Studio</h4>
+            </div>
+            <h5 class="rpHeading">MARKETING EDUCATION</h5>
+            <div class="dropDownDiv" onclick="ActionableMarketingInstitute()">
+              <img class="rpdImg" src="./3.png" alt="productsImg4" />
+              <h4 class="rphead">Actionable Marketing Institute</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Why CoSchedule</button>
+        <div id="whyCoScheduleDropDown" class="dropDownContent">
+          <div onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p class="whyBoxPara">
+              See how CoSchedule customers have found success.
+            </p>
+          </div>
+          <div onclick="BuildYourCaseForCoSchedule()">
+            <h4>Build Your Case for CoSchedule</h4>
+            <p class="whyBoxPara">
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dropDown">
+        <button class="dropBtn">Resources</button>
+        <div id="resourcesDropDown" class="dropDownContent">
+          <div id="resourcesfirstdiv" class="resourceDropDiv">
+            <h5 style="padding-left: 13px">LEARN</h5>
+            <div onclick="CoScheduleBlog()">
+              <h4>CoSchedule Blog</h4>
+              <p>
+                Content to help marketers plan, organize, and meet their
+                goals.
+              </p>
+            </div>
+            <div onclick="CoScheduleGuide()">
+              <h4>CoSchedule Guide</h4>
+              <p>
+                How to organize all of your marketing with CoSchedule best
+                practices.
+              </p>
+            </div>
+            <div onclick="MarketingIdeasHub()">
+              <h4>Marketing Ideas Hub</h4>
+              <p>
+                A list of creative tactics to try out in your marketing
+                strategy.
+              </p>
+            </div>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">TOOLS</h5>
+            <p onclick="HeadlineAnalyzer()" class="clickablePara">
+              Headline Analyzer
+            </p>
+            <p onclick="SocialMessageOptimizer()" class="clickablePara">
+              Social Message Optimizer
+            </p>
+            <p onclick="EmailSubjectLineTester()" class="clickablePara">
+              Email Subject Line Tester
+            </p>
+            <h5 class="sideHeading">BOOKS</h5>
+            <p onclick="tenxMarketingFormula()" class="clickablePara">
+              10x Marketing Formula
+            </p>
+            <p onclick="GetStartedwithAgileMarketing()" class="clickablePara">
+              Get Started with Agile Marketing
+            </p>
+          </div>
+          <div class="resourceDropDiv">
+            <h5 class="sideHeading">GUIDE</h5>
+            <p onclick="AgileMarketingGuide()" class="clickablePara">
+              Agile Marketing Guide
+            </p>
+            <p onclick="MarketingStrategyGuide()" class="clickablePara">
+              Marketing Strategy Guide
+            </p>
+            <p onclick="ContentMarketingGuide()" class="clickablePara">
+              Content Marketing Guide
+            </p>
+            <h5 class="sideHeading">PODCAST</h5>
+            <p onclick="ActionableMarketingPodcast()" class="clickablePara">
+              Actionable Marketing Podcast
+            </p>
+          </div>
+        </div>
+      </div>
+      <a id="pricing" class="dropBtn" href="./pricing.html">Pricing</a>
+    </div>
+    <div id="navBarRightPart">
+      <a class="navRightPartLinks" href="./signIn.html">Sign In</a>
+      <a class="navRightPartLinks" href="./GetADemo.html">Get A Demo</a>
+      <a
+        id="createMyCalendar"
+        class="navRightPartLinks"
+        href="./createMyCalender.html"
+        >Create My Calendar</a
+      >
+    </div>
+  </div>
+  <div id="navBar2">
+    <a id="navLogo" href="./index.html"
+      ><img id="navLogoImg" src="./coScheduleLogo.png" alt="coScheduleLogo"
+    /></a>
+    <button id="divHr">
+      <hr class="hr" />
+      <hr class="hr" />
+      <hr class="hr" />
+      <div id="navBarContent">
+        <div id="navBarContentInnerDiv">
+          <h4 class="nav2Head">PRODUCTS</h4>
+
+          <div>
+            <div class="nav2ProductsDiv" onclick="MarketingCalendar()">
+              <img class="nav2Img1" src="./0.png" alt="productsImg1" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Calendar</h4>
+                <p class="nav2leftPara">
+                  A calendar that helps you see, schedule, and share your
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div class="nav2ProductsDiv" onclick="MarketingSuite()">
+              <img class="nav2Img1" src="./1.png" alt="productsImg2" />
+              <div class="nav2ProductsDivDiv">
+                <h4>Marketing Suite</h4>
+                <p class="nav2leftPara">
+                  A family of agile marketing products to coordinate your
+                  team, projects, and process.
+                </p>
+              </div>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv3"
+              class="nav2ProductsDiv"
+              onclick="HeadlineStudio()"
+            >
+              <img class="nav2Img2" src="./2.png" alt="productsImg3" />
+              <h4 id="nav2headline">Headline Studio</h4>
+            </div>
+            <!-- <br> -->
+            <div
+              id="nav2ProductsDiv4"
+              class="nav2ProductsDiv"
+              onclick="ActionableMarketingInstitute()"
+            >
+              <img class="nav2Img2" src="./3.png" alt="productsImg4" />
+              <h4>Actionable Marketing Institute</h4>
+            </div>
+          </div>
+          <h4 class="nav2Head">WHY COSCHEDULE</h4>
+          <div class="whyCoScheduleDiv" onclick="CustomerStories()">
+            <h4>Case Studies</h4>
+            <p>See how CoSchedule customers have found success.</p>
+          </div>
+          <div
+            class="whyCoScheduleDiv"
+            onclick="BuildYourCaseForCoSchedule()"
+          >
+            <h4>Build Your Case for CoSchedule</h4>
+            <p>
+              Get your custom ROI report & see what your team could save by
+              switching to CoSchedule.
+            </p>
+          </div>
+          <div id="nav2LinksDiv">
+            <a class="nav2Links" href="./pricing.html">Pricing</a>
+            <a
+              id="nav2createMyCalender"
+              class="nav2Links"
+              href="./createMyCalender.html"
+              >Create My Calendar</a
+            >
+            <a class="nav2Links" href="./signIn.html">Sign In</a>
+            <a class="nav2Links" href="./GetADemo.html">Get A Demo</a>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+  <!-- NAVBAR PART END -->
+
+  <div>
+    <div id="backImg">
+        <div id="imgContent">
+            <div id="animationImage">
+                <img src="https://media.coschedule.com/uploads/2020/11/Marketing-Guide-Home-Graphic_Motion-1.gif"
+                    alt="" srcset="">
+            </div>
+            <div id="headingBox">
+                <p>Marketing Strategy</p>
+                <h2>
+
+                    Marketing Strategy: How to Plan Yours in 12 Steps With a Template</h2>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="headingAndNews">
+        <div id="strategyList">
+
+            <h2> Marketing Strategy Guide</h2>
+            <ul class="subHead">
+                <li> SWOT Analysis</li>
+                <li> Marketing Persona</li>
+                <li> Competitive Analysis</li>
+                <li>Marketing Budget</li>
+                <li> Brand Voice</li>
+                <li>Marketing Funnel</li>
+                <li>Marketing Goals</li>
+                <li> Marketing Channels</li>
+                <li>Marketing Tactics</li>
+                <li> Marketing Metrics & KPIs</li>
+                <li>Marketing Calender</li>
+                <li> Marketing Execuation </li>
+                <li>marketing Srategy Examples</li>
+                <ul>
+                    <li> Airbnb Marketing Strategy</li>
+                    <li>disney Marketing Strategy</li>
+                    <li>McDonald's Marketing Strategy</li>
+                </ul>
+
+
+            </ul>
+            <div id="benSailerImg">
+                <img src="ben salier.PNG"
+                    alt="">
+            </div>  
+        </div>
+        <div>
+            
+
+            <div id="publication">
+                <p>Published August 30, 2018/ Updated March 15, 2022</p>
+
+                <p>No time to read? Press play and listen to this guide:</p>
+                <img src="play.PNG" alt="">
+                <p>Every business needs a marketing strategy; however, creating one from scratch is easier said than
+                    done. That might explain why some companies cut corners on strategic planning and treat
+                    marketing
+                    like a cost center that eats investment to produce collateral, instead of a revenue driver that
+                    connects business with consumers and takes responsibility for growth.</p>
+                    <p>This has some significant consequences for our work. Without understanding where your business fits in the market, who your target customers are, and how best to reach them before your competition does, you run the risk of spinning your wheels and failing to grow your business. When this happens, marketing budgets get cut — typically, as soon as times get tough.</p>
+                    <p>Fortunately, you have the power to grow your organization, future-proof your career, and become a brilliant marketing strategist. You can know your customers better than they know themselves, understand exactly how to create content and launch campaigns they love, and get reliable results that power sales. In short, <b>you can succeed at marketing strategy.</b> </p>
+                    <p>Everything you need to know is in this guide — based on the collective, personal experiences of the CoSchedule team. It’s an in-depth guide that not only covers why strategy matters for marketers, but  <b> how to actually put your plan into action in a way that’s easy to follow.</b> Plus, you’ll get a full downloadable set of templates and resources to document and execute each step along the way, so you’re never left wondering what to do next. </p>
+                    <h2>An Actionable Marketing Strategy Template You Can Actually Use</h2>
+                    <p>You’re likely here because you know you need a strategy, and you know it needs to be documented. This will help you know what you’re doing (your tactics), why you’re doing it (your strategy), and who you’re doing it for (your customers)</p>
+                    <p>This guide covers all of this and more, but in order to apply what you’ll learn, you’ll need some basic tools and templates. A key piece in documentation is, well, actual documents. One of the biggest inhibitors to documenting strategy — beyond the practical knowledge required — is a lack of time.</p>
+                    <p>So, to make this work easier, this guide includes the following resources:</p>
+                    <ul class="tableUpper">
+                        <li> <b>A holistic and overarching marketing strategy template:</b> One Word doc to rule them all. This is where you can keep your entire strategy documented in one place. It’s visually bare-bones, but it can easily be styled to fit your branding.</li>
+                        <li> <b> A marketing strategy presentation template: </b>This PowerPoint template is useful for presenting your strategy to key stakeholders.</li>
+                        <li><b> Individual templates for executing each chapter:</b> Each chapter in this guide features an additional template or other resource to help you apply the advice.</li>
+                    </ul>
+                    <img src="downloadStrategy.PNG" alt="">
+                    <img  class="imageSize"  src="tableContent.PNG" alt="">
+                    <h2>What We Talk About When We Talk About Strategic Marketing</h2>
+                    <p>Let’s establish what we mean when we use the term “marketing strategy”. There are a number of different definitions that often get applied to this seemingly simple term, so it’d be best to clearly delineate how this guide defines the concept.</p>
+                    <p>Marketing strategy describes the process of how businesses and organizations understand their markets and their methods for influencing profitable customer action.</p>
+                    <p>That seems succinct enough, right? In other words and in the interest of keeping things simple, this is all about:</p>
+                    <p>1. Understanding who buys your products and services.</p>
+                    <p>2. Understanding how you’ll motivate them to take profitable action.</p>
+                    <p>3. Understanding your competitors who are trying to do the same thing.</p>
+                    <p>4. Understanding how you’ll measure marketing activities and refine your approach moving forward.</p>
+                    <p>This, in turn, is essentially a rephrasing of the classic four P’s of marketing: Product, Price, Place, and Promotion. According to MBA Skool, these principles collectively compile the “product mix”, which is a “crucial tool in determining a product’s offering to the customer.” As marketers, everything we do starts with understanding this concept.</p>
+                    <img class="imageSize" src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2F2022%2F01%2FCh1_MBA-Skool-2.png&w=1920&q=75" alt="">
+                    <h2>Marketing Strategy vs. Marketing Tactics: What’s the Difference?</h2>
+                    <p>When most people think about marketing, they think about its visible execution they see in their everyday lives. That could include anything from social media ads to billboards to television commercials to blog posts from their favorite brands and more. This is what people commonly think equals strategy: the “stuff” that marketers create, rather than the planning behind it.</p>
+                    <p>That’s fine for folks whose careers don’t hinge on them actually understanding how marketing works. For anyone reading this, knowing the difference between strategy vs. tactics is essential for success. If you want to rely on more than just luck and brute force, you’ll need to understand that <b>
+
+                        your tactics are the execution of your strategy and not the strategy itself.
+                    </b>
+                </p>
+                <p>With that said, executing any type of marketing strategy will entail applying several types of tactics. For a full list of marketing tactics, check out chapter 9.</p>
+                <img  class="imageSize"src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2F2020%2F11%2FMarketing-Strategy-How-to-Plan-Yours-in-12-Steps_inline-01-1.png&w=1920&q=75" alt="">
+            </div>
+        </div>  
+    </div>
+
+</div>
+
+
+<!-- FOOTER PART START -->
+
+<footer>
     
+    <div id="footerGrid">
+      <div id="productsDiv">
+        <h4>PRODUCTS</h4>
+        <a href="./MarketingCalendar.html">Marketing Calendar</a>
+        <a href="./MarketingSuite.html">Marketing Suite</a>
+        <a href="./HeadlineStudio.html">Headline Studio</a>
+        <a href="./ActionableMarketingInstitute.html"
+          >Actionable Marketing Institute</a
+        >
+      </div>
+      <div id="whyCoScheduleDiv">
+        <h4>WHY COSCHEDULE</h4>
+        <a href="./CustomerStories.html">Customer Stories</a>
+        <a href="./Support.html">Support</a>
+        <a href="./ProductAnnouncements.html">Product Announcements</a>
+        <a href="./pricing.html">Pricing</a>
+      </div>
+      <div id="companyDiv">
+        <h4>COMPANY</h4>
+        <a href="./About.html">About</a>
+        <a href="./Jobs.html">Jobs</a>
+        <a href="./Press.html">Press</a>
+        <a href="./ContactUs.html">Contact Us</a>
+        <a href="./AffiliateProgram.html">Affiliate Program</a>
+        <a href="./Terms&Policies.html">Terms & Policies</a>
+      </div>
+      <div id="resourcesDiv">
+        <h4>RESOURCES</h4>
+        <a href="./CoScheduleBlog.html">CoSchedule Marketing Blog</a>
+        <a href="./ActionableMarketingPodcast.html"
+          >Actionable Marketing Podcast</a
+        >
+        <a href="./10xMarketingFormula.html">10x Marketing Formula Book</a>
+        <a href="./GetStartedwithAgileMarketing.html"
+          >Get Started With Agile Marketing Book</a
+        >
+        <a href="./MarketingIdeasHub.html">Marketing Ideas Hub</a>
+      </div>
+      <div id="guidesDiv">
+        <h4>GUIDES</h4>
+        <a href="./CoScheduleGuide.html">CoSchedule Guide</a>
+        <a href="./AgileMarketingGuide.html">Agile Marketing Guide</a>
+        <a href="./MarketingStrategyGuide.html">Marketing Strategy Guide</a>
+        <a href="./ContentMarketingGuide.html">Content Marketing Guide</a>
+      </div>
+      <div id="toolsDiv">
+        <h4>TOOLS</h4>
+        <a href="./HeadlineAnalyzer.html">Headline Analyzer</a>
+        <a href="./SocialMessageOptimizer.html">Social Message Optimizer</a>
+        <a href="./EmailSubjectLineTester.html">Email Subject Line Tester</a>
+        <a href="./MarketingDictionary.html">Marketing Dictionary</a>
+      </div>
+    </div>
+    <div id="footerBoxDown">
+        <a href="./index.html"
+          ><img width="220px" src="./coScheduleLogo.png" alt="coScheduleLogo"
+        /></a>
+        <a href="./createMyCalender.html">Sign Up</a>
+        <a href="./GetADemo.html">Request A Demo</a>
+        <a href="./signIn.html">Sign In</a>
+    </div>
+  </footer>
+ <p id="termsfoot">© Copyright 2022, all rights reserved. See our <a href="./Terms&Policies.html">Terms & Policies</a></p>
+  <!-- FOOTER PART END -->
+    <script src="./MarketingStrategyGuide.js"></script>
 </body>
 </html>
