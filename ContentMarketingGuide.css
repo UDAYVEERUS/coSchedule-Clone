@@ -1,0 +1,345 @@
+/* footer styles start */
+#footerGrid {
+    /* border: 1px solid red; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 100px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #footerGrid > div {
+    padding: 20px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  #footerGrid > div > a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding: 3px;
+  }
+  #footerGrid > div > h4 {
+    margin-bottom: 3%;
+    padding-left: 3px;
+  }
+  #footerBox {
+    display: flex;
+  }
+  #footerBoxDown {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    text-align: left;
+    padding: 3px;
+    padding-top: 35px;
+  }
+  #footerBoxDown > a {
+    margin: auto;
+    padding: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #termsfoot{
+    /* margin: auto; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+  }
+  #termsfoot>a{
+    color: gray;
+  }
+
+  @media all and (min-width: 569px) and (max-width: 990px) {
+    #footerGrid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 75px;
+    }
+  }
+  @media all and (min-width: 0px) and (max-width: 569px) {
+    #footerGrid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 30px;
+    }
+  }
+/* footer styles end */
+     
+       body{
+           background-color: #f8f8f8;
+       }
+       * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #bgColor {
+        /* background-color: var(--guidePrimaryColor, #e6e7e8); */
+        background-image: url(	https://media.coschedule.com/uploads/2021/11/Ch-0-pattern-2.png);
+        background-repeat: repeat;
+
+
+    }
+
+    #bgColor div {
+        /* display: flex; */
+        /* border: 1px solid  red ; */
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        padding: 100px;
+
+    }
+
+    #bgColor img {
+
+        width: 20%;
+    }
+
+    #bgColor p {
+        color: white;
+        font-size: 15px;
+        line-height: 374%;
+        font-family: sans-serif;
+    }
+
+    #bgColor h2 {
+        color:white;
+        font-family: sans-serif;
+        font-size: 42px;
+    }
+
+    .pHead p {
+        color: #902222;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 27px 11px;
+    }
+
+    #contentBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        margin-top: 25px;
+    }
+
+    #chapters {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    #chapters div {
+        width: 50%;
+        border-bottom: 1px solid rgb(193, 188, 188);
+        margin: auto;
+        margin-top: 20px;
+        /* padding: 15px; */
+
+    }
+
+    .chapterHeading:hover {
+        cursor: pointer;
+        color: #f51515;
+
+    }
+
+    .chapterHeading h4:hover {
+        cursor: pointer;
+        color: #f51515;
+
+    }
+
+    .chapterHeading p:hover {
+        cursor: pointer;
+        color: #f51515;
+
+    }
+
+    /* #paras div{
+        /* padding: 20px; */
+
+
+    #parasHeadingDate p {
+
+        line-height: 150%;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: #474747;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+
+    .parasHeading p {
+
+        line-height: 150%;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: #474747;
+        margin-top: 15px;
+    }
+
+    .parasHeading a {
+
+        text-decoration: none;
+        color: #f51515;
+    }
+
+   
+
+    .chapterHeading h4 {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: #474747;
+        /* margin-top: 30px; */
+    }
+
+    .chapterHeading p {
+        /* width:70%; */
+        font-size: 18px;
+        font-family: sans-serif;
+        color: #474747;
+        /* line-height: 130%; */
+        margin-top: 40px;
+    }
+
+    #imgBox {
+        /* background-color: var(--guidePrimaryColor, #f7f9fb); */
+        width: 80%;
+        margin: auto;
+        /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+        text-align: center;
+        padding: 35px;
+        margin-top: 30px;
+
+
+    }
+
+    #imgBox img {
+        width: 70%;
+    }
+
+    #imgBox h2 {
+        color: #474747;
+        font-size: 22px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .imagBoxMidP {
+        color: #474747;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #imgBox button {
+        background-color: #ed2847;
+        font-size: 20px;
+        color: #f7f9fb;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 65px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+    }
+
+    #imgBox a {
+        text-decoration: none;
+        color: #f7f9fb;
+    }
+
+    .pdf {
+        color: #c30909;
+        text-decoration: underline;
+    }
+
+    #contentBox2 {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: auto;
+        gap: 30px;
+
+    }
+
+    .firstList {
+        color: #474747;
+    }
+    #chapterList h2{
+        color: #474747;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+
+    .ordredLists {
+        line-height: 50px;
+        font-size: 18px;
+        font-family: sans-serif;
+        color: #f46767;
+    }
+    #chapterList p {
+        /* width:70%; */
+        font-size: 18px;
+        font-family: sans-serif;
+        color: #474747;
+        /* line-height: 130%; */
+        margin-top: 40px;
+    }
+    #chapterList img{
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+@media all and (min-width:451px) and (max-width: 800px){
+#chapters{
+    display: none;
+}
+#imgBox{
+    display: none;
+}
+#contentBox {
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    margin-left: 25px;
+    }
+    #contentBox2{
+        grid-template-columns: repeat(1 ,1fr);
+        margin-left: 30px;
+    }
+}
+
+@media all and (min-width:86px) and (max-width: 450px){
+
+#bgColor {
+        background-color: var(--guidePrimaryColor, #e6e7e8);
+        margin: auto;
+        width: auto;
+
+
+    }
+
+#chapters{
+    display: none;
+}
+#imgBox{
+    display: none;
+}
+#contentBox {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        margin-left: 25px;
+    }
+    #contentBox2{
+        grid-template-columns: repeat(1 ,1fr);
+        margin-left: 30px;
+    }
+
+}
