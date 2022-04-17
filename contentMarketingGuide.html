@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Content Marketing Guide</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #bgColor {
+            /* background-color: var(--guidePrimaryColor, #e6e7e8); */
+            background-image: url(	https://media.coschedule.com/uploads/2021/11/Ch-0-pattern-2.png);
+            background-repeat: repeat;
+
+
+        }
+
+        #bgColor div {
+            /* display: flex; */
+            /* border: 1px solid  red ; */
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            padding: 100px;
+
+        }
+
+        #bgColor img {
+
+            width: 20%;
+        }
+
+        #bgColor p {
+            color: white;
+            font-size: 15px;
+            line-height: 374%;
+            font-family: sans-serif;
+        }
+
+        #bgColor h2 {
+            color:white;
+            font-family: sans-serif;
+            font-size: 42px;
+        }
+
+        .pHead p {
+            color: #902222;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 27px 11px;
+        }
+
+        #contentBox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: repeat(2, 1fr); */
+            margin-top: 25px;
+        }
+
+        #chapters {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+        }
+
+        #chapters div {
+            width: 50%;
+            border-bottom: 1px solid rgb(193, 188, 188);
+            margin: auto;
+            margin-top: 20px;
+            /* padding: 15px; */
+
+        }
+
+        .chapterHeading:hover {
+            cursor: pointer;
+            color: #f51515;
+
+        }
+
+        .chapterHeading h4:hover {
+            cursor: pointer;
+            color: #f51515;
+
+        }
+
+        .chapterHeading p:hover {
+            cursor: pointer;
+            color: #f51515;
+
+        }
+
+        /* #paras div{
+            /* padding: 20px; */
+
+
+        #parasHeadingDate p {
+
+            line-height: 150%;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #474747;
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+
+        .parasHeading p {
+
+            line-height: 150%;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #474747;
+            margin-top: 15px;
+        }
+
+        .parasHeading a {
+
+            text-decoration: none;
+            color: #f51515;
+        }
+
+       
+
+        .chapterHeading h4 {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #474747;
+            /* margin-top: 30px; */
+        }
+
+        .chapterHeading p {
+            /* width:70%; */
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #474747;
+            /* line-height: 130%; */
+            margin-top: 40px;
+        }
+
+        #imgBox {
+            /* background-color: var(--guidePrimaryColor, #f7f9fb); */
+            width: 80%;
+            margin: auto;
+            /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+            text-align: center;
+            padding: 35px;
+            margin-top: 30px;
+
+
+        }
+
+        #imgBox img {
+            width: 70%;
+        }
+
+        #imgBox h2 {
+            color: #474747;
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .imagBoxMidP {
+            color: #474747;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #imgBox button {
+            background-color: #ed2847;
+            font-size: 20px;
+            color: #f7f9fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 65px;
+            border-radius: 10px;
+            border: none;
+            margin: 10px;
+        }
+
+        #imgBox a {
+            text-decoration: none;
+            color: #f7f9fb;
+        }
+
+        .pdf {
+            color: #c30909;
+            text-decoration: underline;
+        }
+
+        #contentBox2 {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            margin: auto;
+            gap: 30px;
+
+        }
+
+        .firstList {
+            color: #474747;
+        }
+        #chapterList h2{
+            color: #474747;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .ordredLists {
+            line-height: 50px;
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #f46767;
+        }
+        #chapterList p {
+            /* width:70%; */
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #474747;
+            /* line-height: 130%; */
+            margin-top: 40px;
+        }
+        #chapterList img{
+            width: 90%;
+            margin-top: 20px;
+        }
+        
+@media all and (min-width:451px) and (max-width: 800px){
+    #chapters{
+        display: none;
+    }
+    #imgBox{
+        display: none;
+    }
+    #contentBox {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        margin-left: 25px;
+        }
+        #contentBox2{
+            grid-template-columns: repeat(1 ,1fr);
+            margin-left: 30px;
+        }
+}
+
+@media all and (min-width:86px) and (max-width: 450px){
+
+    #bgColor {
+            background-color: var(--guidePrimaryColor, #e6e7e8);
+            margin: auto;
+            width: auto;
+
+
+        }
+
+    #chapters{
+        display: none;
+    }
+    #imgBox{
+        display: none;
+    }
+   #contentBox {
+            /* display: grid; */
+            grid-template-columns: repeat(1, 1fr);
+            /* grid-template-rows: repeat(2, 1fr); */
+            margin-left: 25px;
+        }
+        #contentBox2{
+            grid-template-columns: repeat(1 ,1fr);
+            margin-left: 30px;
+        }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="bgColor">
+        <div>
+               
+                <img src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2F2021%2F11%2FContent-Marketing-Guide-home-icon-1.png&w=1920&q=75" alt="">
+            <P>AGILE MARKETING GUIDE </P>
+            <h2>How to Get Started With Agile Marketing and Do Your Best Work</h2>
+        </div>
+    </div>
+    <div class="pHead">
+        <p>GUIDE HOME</p>
+    </div>
+    <hr>
+    <div>
+        <div id="contentBox">
+            <div id="chapters">
+                <div class="chapterHeading">
+                    <h4>CHAPTER 1</h4>
+                    <P>19 Benefits of Content Marketing That Every Business Can Achieve</P>
+                </div>
+
+                <div class="chapterHeading">
+                    <h4>CHAPTER 2</h4>
+                    <P>113 Types of Content Marketing You Can Add to Your Calendar Now</P>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 3</h4>
+                    <p>18 Content Marketing Examples You Can Emulate for Success</p>                    
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 4</h4>
+                    <p>38 Content Marketing Ideas That Will Get You Inspired</p>                    
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 5</h4>
+                    <p>How to Plan an Actionable Content Marketing Strategy Right Now [Template]</p>                    
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 6</h4>
+                    <p>How to Measure The ROI Of Content Marketing: A Step-by-Step Guide</p>
+                </div>
+                <div class="chapterHeading">
+                    <h4>CHAPTER 7 </h4>
+                    <P>How to Improve Marketing Processes With Agile Sprint Retrospectives</P>
+                </div>
+            </div>
+            <div id="paras">
+                <div>
+                    <div id="parasHeadingDate">
+                        <p>Published December 1, 2021/ Updated April 4, 2022</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>There’s never been more hype around content marketing. And data shows the hype is real. More companies are investing more resources into content strategy and creation than ever before. Most of them are reporting some sort of success too.</p>
+                    </div>
+                    <br>
+                    <div class="parasHeading">
+                        <p>But what defines it as an actual marketing discipline? How do you actually plan a strategy and execute it?</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>These questions stem from one simple source of anxiety: the fear of not doing things the right way. This leads to a lot of marketers doing a lot of things in exactly the same way. We all begin to follow one another instead of finding our own way forward.</p>
+
+                    </div>
+                    <div class="parasHeading">
+                       <p>So, what’s the problem? Most of the advice you’ll read on the web will come from people whose professional experiences and backgrounds may be wildly different from your own (a challenge all content marketers face). This tweet from Podia’s Len Markidan resonates:</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>The results speak for themselves: within a five-year span, agile workflows have helped <a
+                                href="index.html">CoSchedule</a> grow into an industry-leading marketing SaaS company
+                            (offering a world-class software suite that helps marketers get organized), <span
+                                style="color: #f51515;">landing at number 153 on the Inc. 500 list in 2018</span> and
+                            earning a spot on Gartner’s Magic Quadrant for Content Marketing Platforms.</p>
+                    </div>
+                    <div class="parasHeading">
+                        <p>Implementing such processes isn’t without its challenges. Fortunately though, any company can
+                            get started and reap the rewards, transforming even the most stuck-in-the-past teams from
+                            cumbersome cost-centers into lean revenue-generating machines. And that is exactly what
+                            you’ll learn how to achieve by reading this in-depth guide on going agile today.
+
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="contentBox2">
+
+
+
+
+            <div id="imgBox">
+                <img src="ben salier.PNG" alt="">
+                <!-- <h2>Prefer paperback? Buy this book on Amazon</h2> -->
+                <!-- <p class="imagBoxMidP">Available in print and digital editions.</p> -->
+                <div>
+
+                    <!-- <button><a href="#">Get It Now</a></button> -->
+
+                    <!-- <p class="pdf">or download the pdf </p> -->
+                </div>
+            </div>
+
+
+
+            <div id="chapterList">
+                <img src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2F2021%2F09%2F1a0d3777-4bb8-4334-ba61-8f704501a7a2_len-markidan-marketing-advice-quote-tweet.png&w=1920&q=75" alt="">
+                <!-- <h2>Chapter List</h2>
+                <ol class="ordredLists">
+                    <li class="firstList">How to Get Started With Agile Marketing and Do Your Best Work (Current
+                        Chapter)</li>
+                    <li>What is the Agile Scrum Framework and How Does It Work For Marketers?</li>
+                    <li>How to Organize Cross Functional Marketing Teams</li>
+                    <li>How to Implement a Simple Agile Sprint Planning Process For Marketers</li>
+                    <li>How to Run Effective Daily Standup Meetings With Busy Marketers</li>
+                    <li>How to Implement Agile Marketing Workflows With Examples</li>
+                    <li>How to Improve Marketing Processes With Agile Sprint Retrospectives</li>
+                </ol> -->
+                <img src="" alt="">
+
+                <div class="ptag">
+                <h2>Why Create This Guide?</h2>
+                <p>Marketing teams often struggle to meet deadlines and achieve their goals because of inefficient processes and a lack of proper tools to support better ways of working.
+
+            </p>
+               <p> Implementing agile principles and workflows, however, can go a long way toward solving these problems for marketing departments across all kinds of verticals. It’s no exaggeration nor hollow marketing claim to state that it has been immensely impactful upon CoSchedule’s growth.</p>
+            </div>
+            <div>
+                <h2>What Can You Expect to Find Here?</h2>
+                <p>There are numerous ways to apply agile to marketing. Like so many other things in this industry, there are also different philosophies and opinions on the best way it should be approached.</p>
+                <p>With that said, this guide is not necessarily the end-all, be-all authority on the subject. It’s such a broad topic with so many varying approaches that one resource covering every aspect of agile inside and out would be an intimidating challenge (both to create and to read).</p>
+                <p>Instead, it breaks down the basics of what you need to know, and explains how to actually implement it with easy-to-follow step-by-step instruction. It’s all informed by what has worked for the marketing team at CoSchedule too, blending our own approach with some by-the-book explanation. There’s some (strategic and thoughtful) repetition of information too, so if you don’t quite catch something the first time, you’ll often have an opportunity to hear it again later.</p>
+                <p>Rather than diving deep into minutiae that may not make sense to newcomers, we thought this approach would be more useful. What matters most above all is that you’re able to put better processes into place so your team can work more efficiently and effectively to get better results in less time. And that’s exactly what we hope you’ll gain as a result of reading this guide.</p>
+                <div>
+
+                    <h2>Download: Get This Guide in One Full PDF</h2>
+                    <p>If you would prefer to read this guide in PDF, you can. Download the complete guide in one easy-to-read format below (plus, find additional templates you’ll use in subsequent chapters):</p>
+                    <img src="downlod marketing strategy.PNG" alt="">
+                </div>
+                <div>
+                    <h2>So, What Exactly is Agile Marketing?</h2>
+                    <p>It’s a project management framework that borrows the principles of agile software development (which enables teams to hit ship dates under budget more consistently) and applies it to a marketing context. It achieves this by streamlining team structure, communication, processes, and workflows to maximize efficiency without sacrificing quality.</p>
+                    <p>This results in doing better work more quickly with fewer missed deadlines. It also allows teams to respond to changes in the market and adjust tactics according to what works much more rapidly than the typical annual “big campaign” advertising model.</p>
+                    <img src="https://coschedule.com/_next/image?url=https%3A%2F%2Fmedia.coschedule.com%2Fuploads%2F2021%2F12%2Fcontent-marketing-guide-homepage-plan-execution.png&w=1920&q=75" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
