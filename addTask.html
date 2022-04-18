@@ -10,8 +10,11 @@
 <body>
     <div id="inputBox">
           <form id="inputForm">
-             
+              <label for="">Select Date :</label>
               <input id="date" type="date" placeholder="Date ~~ DDMMYY">
+              <label for="">Select Time :</label>
+              <input id="time"  type="time" placeholder="Time">
+              <label for="">Select Type :</label>
               <select id="type" id="type">
                   <option value="">Type of Task</option>
                   <option value="Project">Project</option>
@@ -19,7 +22,9 @@
                   <option value="Note">Note</option>
                   <option value="Others">Others</option>
               </select>
-              <input id="task" type="text" placeholder="Add Task">
+              <label for="">Task Details :</label>
+              <input id="task" type="text" placeholder="Task Details">
+              
               <input id="submitBtn" type="submit" value="Add Task">
           </form>
     </div>

@@ -5,10 +5,11 @@ function allTasksCoSchedule() {
   event.preventDefault();
   var obj = {
     date: document.querySelector("#date").value,
+    time : document.querySelector("#time").value,
     type : document.querySelector("#type").value,
     task : document.querySelector("#task").value,
   };
-  if(document.querySelector("#date").value==''||document.querySelector("#type").value==''||document.querySelector("#task").value==''){
+  if(document.querySelector("#date").value==''||document.querySelector("#type").value==''||document.querySelector("#task").value==''||document.querySelector("#time").value==''){
       alert('Provide All Input')
   }
   else{
@@ -17,6 +18,7 @@ function allTasksCoSchedule() {
     alert("Added Successfully");
 
     document.querySelector("#date").value='';
+    document.querySelector("#time").value='';
     document.querySelector("#type").value='';
     document.querySelector("#task").value='';
   }
@@ -32,6 +34,9 @@ function displayData(allTasksCoSchedule){
         var date=document.createElement('h4');
         date.style.marginTop='-7%'
         date.innerText='Date : '+element.date;
+
+        var time=document.createElement('p');
+        time.innerText='Time : '+element.time;
 
         var type=document.createElement('p');
         type.innerText='Type : '+element.type;
@@ -58,7 +63,7 @@ function displayData(allTasksCoSchedule){
             window.location.reload();
         })
 
-        div.append(remove, date, type, task);
+        div.append(remove, date, time, type, task);
         document.querySelector('#allTaskGrid').append(div);
     });
 }
